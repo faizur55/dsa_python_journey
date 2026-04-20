@@ -50,10 +50,10 @@ This repo tracks my complete journey through **Data Structures & Algorithms in P
 <!-- Update these manually each week -->
 
 ```
-Total Problems Solved :  0  / 60+
-Weeks Completed       :  0  / 10
-Current Streak        :  1  day(s)
-Hours Logged          :  0  hrs
+Total Problems Solved :  16  / 60+
+Weeks Completed       :  1  / 10
+Current Streak        :  7  day(s)
+Hours Logged          :  15  hrs
 ```
 
 ---
