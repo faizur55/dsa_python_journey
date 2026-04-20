@@ -2,18 +2,18 @@ week-01/
 ├── README.md
 ├── daily-log.md           
 └── solutions/
-    ├── day1_two_sum.py
-    ├── day1_single_number.py
-    ├── day1_intersection.py
-    ├── day2_contains_duplicate.py
-    ├── day2_valid_anagram.py
-    ├── day2_first_unique_char.py
-    ├── day2_jewels_stones.py
-    ├── day3_ransom_note.py
-    ├── day3_group_anagrams.py
-    ├── day4_remove_duplicates.py
-    ├── day4_move_zeroes.py
-    ├── day5_best_time_stocks.py
+    ├── https://leetcode.com/problems/two-sum/submissions/1965423520/  day 1
+    ├── https://leetcode.com/problems/single-number/submissions/1967310180/  day1
+    ├── https://leetcode.com/problems/intersection-of-two-arrays/submissions/1967888849/ day 1
+    ├── https://leetcode.com/problems/contains-duplicate/submissions/1966990850/  day 1
+    ├── https://leetcode.com/problems/valid-anagram/submissions/1967028720/  day 2
+    ├── day2_first_unique_char.py   https://leetcode.com/problems/first-unique-character-in-a-string/submissions/1967901865/
+    ├── day2_jewels_stones.py   https://leetcode.com/problems/jewels-and-stones/submissions/1968745993/
+    ├── day3_ransom_note.py   https://leetcode.com/problems/ransom-note/submissions/1971753600/
+    ├── day3_group_anagrams.py  https://leetcode.com/problems/group-anagrams/submissions/1973589909/
+    ├── day4_remove_duplicates.py  https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/1976259969/
+    ├── day4_move_zeroes.py   https://leetcode.com/problems/move-zeroes/submissions/1976267834/
+    ├── day5_best_time_stocks.py  
     ├── day5_longest_common_prefix.py
     ├── day5_top_k_frequent.py
     ├── day6_word_pattern.py
