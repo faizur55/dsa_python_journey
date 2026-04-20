@@ -2,19 +2,19 @@ week-01/
 ├── README.md
 ├── daily-log.md           
 └── solutions/
-    ├── https://leetcode.com/problems/two-sum/submissions/1965423520/  day 1
-    ├── https://leetcode.com/problems/single-number/submissions/1967310180/  day1
-    ├── https://leetcode.com/problems/intersection-of-two-arrays/submissions/1967888849/ day 1
-    ├── https://leetcode.com/problems/contains-duplicate/submissions/1966990850/  day 1
-    ├── https://leetcode.com/problems/valid-anagram/submissions/1967028720/  day 2
-    ├── day2_first_unique_char.py   https://leetcode.com/problems/first-unique-character-in-a-string/submissions/1967901865/
-    ├── day2_jewels_stones.py   https://leetcode.com/problems/jewels-and-stones/submissions/1968745993/
-    ├── day3_ransom_note.py   https://leetcode.com/problems/ransom-note/submissions/1971753600/
-    ├── day3_group_anagrams.py  https://leetcode.com/problems/group-anagrams/submissions/1973589909/
-    ├── day4_remove_duplicates.py  https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/1976259969/
-    ├── day4_move_zeroes.py   https://leetcode.com/problems/move-zeroes/submissions/1976267834/
-    ├── day5_best_time_stocks.py  
-    ├── day5_longest_common_prefix.py
-    ├── day5_top_k_frequent.py
-    ├── day6_word_pattern.py
-    └── day6_sort_array_parity.py
+    ├── https://leetcode.com/problems/two-sum/submissions/1965423520/
+    ├── https://leetcode.com/problems/single-number/submissions/1967310180/
+    ├── https://leetcode.com/problems/intersection-of-two-arrays/submissions/1967888849/
+    ├── https://leetcode.com/problems/contains-duplicate/submissions/1966990850/
+    ├── https://leetcode.com/problems/valid-anagram/submissions/1967028720/
+    ├── https://leetcode.com/problems/first-unique-character-in-a-string/submissions/1967901865/
+    ├── https://leetcode.com/problems/jewels-and-stones/submissions/1968745993/
+    ├── https://leetcode.com/problems/ransom-note/submissions/1971753600/
+    ├── https://leetcode.com/problems/group-anagrams/submissions/1973589909/
+    ├── https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/1976259969/
+    ├── https://leetcode.com/problems/move-zeroes/submissions/1976267834/
+    ├── https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/1976596913/
+    ├──  https://leetcode.com/problems/longest-common-prefix/submissions/1976874920/
+    ├── https://leetcode.com/problems/top-k-frequent-elements/submissions/1976904553/
+    ├── https://leetcode.com/problems/word-pattern/submissions/1978811115/
+    └── https://leetcode.com/problems/sort-array-by-parity/submissions/1980524899/
