@@ -32,7 +32,7 @@ This repo tracks my complete journey through **Data Structures & Algorithms in P
 
 | Week | Topic | Log | Blog Post | Status |
 |------|-------|-----|-----------|--------|
-| [Week 1](week-1) | Python Foundations & Big-O Complexity | [📓 Daily Log](week-01/solutions/) | ✏️ Draft | 🔄 Active |
+| [Week 1](week-1) | Python Foundations & Big-O Complexity | [📓 Daily Log](solutions/) | ✏️ Draft | 🔄 Active |
 | Week 2 | Arrays, Strings & Two Pointers | — | — | ⏳ |
 | Week 3 | Hash Maps, Sets & Stacks | — | — | ⏳ |
 | Week 4 | Linked Lists & Recursion | — | — | ⏳ |
