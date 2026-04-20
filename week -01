@@ -1,1 +1,20 @@
-
+week-01/
+├── README.md
+├── daily-log.md           
+└── solutions/
+    ├── day1_two_sum.py
+    ├── day1_single_number.py
+    ├── day1_intersection.py
+    ├── day2_contains_duplicate.py
+    ├── day2_valid_anagram.py
+    ├── day2_first_unique_char.py
+    ├── day2_jewels_stones.py
+    ├── day3_ransom_note.py
+    ├── day3_group_anagrams.py
+    ├── day4_remove_duplicates.py
+    ├── day4_move_zeroes.py
+    ├── day5_best_time_stocks.py
+    ├── day5_longest_common_prefix.py
+    ├── day5_top_k_frequent.py
+    ├── day6_word_pattern.py
+    └── day6_sort_array_parity.py
