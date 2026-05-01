@@ -30,8 +30,8 @@ Platform: LeetCode
 
 | Week | Topic | Daily Log | Blog | Status |
 |------|-------|-----------|------|--------|
-| [Week 1](./week-01/) | Python Foundations & Big-O | [📓 Log](./week-01/daily-log.md) | [Post](/week-01/post.md) | ✅ |
-| [Week 2](./week-02/) | Arrays & Patterns | [📓 Log](./week-02/daily-log.md) | [Post](/week-02/post.md) | ✅ |
+| [Week 1](./week-01/) | Python Foundations & Big-O | [📓 Log](./week-01/daily-log.md) | [Post](./week-01/post.md) | ✅ |
+| [Week 2](./week-02/) | Arrays & Patterns | [📓 Log](./week-02/daily-log.md) | [Post](./week-02/post.md) | ✅ |
 | Week 3 | Stacks & Queues | — | — | ⏳ |
 | Week 4 | Linked Lists | — | — | ⏳ |
 | Week 5 | Trees & Binary Search | — | — | ⏳ |
