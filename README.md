@@ -44,10 +44,10 @@ Platform: LeetCode
 ---
 
 ## 📊 Progress
-Total Problems Solved :  29+ / 60+
+Total Problems Solved :  33+ / 60+
 Weeks Completed       :  2   / 10
-Current Streak        :  14  day(s)
-Hours Logged          :  35 hours
+Current Streak        :  16  day(s)
+Hours Logged          :  40 hours
 
 ---
 
