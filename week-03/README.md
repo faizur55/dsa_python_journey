@@ -30,6 +30,9 @@ and the monotonic stack pattern.
 | 2 | [Implement Queue Using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | Easy | [code](./solutions/day1_queue_using_stacks.py) |
 | 3 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | Medium | [code](./solutions/day2_daily_temperatures.py) |
 | 4 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | Easy | [code](./solutions/day2_next_greater_element.py) |
+| 5 | [Four Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | [code](./solutions/day3_four_sum_ii.py) |
+| 6 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy | [code](./solutions/day3_majority_element.py) |
+| 7 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | [code](./solutions/day3_longest_consecutive.py) |
 
 ---
 
@@ -37,7 +40,7 @@ and the monotonic stack pattern.
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 4
+Problems Solved : 7
 Key Takeaway    : Stack = waiting room.
                   Pop when answer found.
                   Push when still waiting.
