@@ -1,8 +1,8 @@
 # 📓 Week 3 Daily Log
 
 ## Day 1 — Stacks & Queues
-**Date:** [your date]
-**Time:** [hours]
+**Date:** 15 March 2026
+**Time:** 2 hours
 
 ### Topics
 - Stack — LIFO, push, pop O(1)
@@ -28,8 +28,8 @@ because double reversal = original order.
 ---
 
 ## Day 2 — Monotonic Stack
-**Date:** [your date]
-**Time:** [hours]
+**Date:** 16 March 2026
+**Time:** 3 Hours
 
 ### Topics
 - Monotonic decreasing stack
@@ -52,9 +52,34 @@ Each element pushed and popped exactly once → O(n).
 [what was easy, what was hard]
 
 ---
+## Day 3 — Hash Maps Deeper
+**Date:** 17 March 2026
+**Time:** 2 hours
 
-## Day 3 — [upcoming]
+### Topics
+- Frequency + Condition pattern
+- Complement lookup extended
+- Set for O(n) sequence problems
+- Boyer-Moore Voting algorithm
 
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Four Sum II | [code](./solutions/day3_four_sum_ii.py) |
+| Majority Element | [code](./solutions/day3_majority_element.py) |
+| Longest Consecutive | [code](./solutions/day3_longest_consecutive.py) |
+
+### Key Insight
+Every hash map problem asks one of:
+  "Have I seen this?"      → set
+  "How many times?"        → Counter
+  "What's the complement?" → dict lookup
+  
+Boyer-Moore: majority element survives
+all cancellations → O(1) space!
+
+### Reflection
+[your honest thoughts]
 ---
 
 ## Day 4 — [upcoming]
