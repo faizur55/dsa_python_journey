@@ -82,8 +82,35 @@ all cancellations → O(1) space!
 [your honest thoughts]
 ---
 
-## Day 4 — [upcoming]
+## Day 4 — Advanced String Problems
+**Date:** 18 March 2026
+**Time:** 3 hours
 
+### Topics
+- Min Stack — two stacks in sync
+- Decode String — stack saves/restores state
+- Find Anagrams — Counter + sliding window
+
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Min Stack | [code](./solutions/day4_min_stack.py) |
+| Decode String | [code](./solutions/day4_decode_string.py) |
+| Find All Anagrams | [code](./solutions/day4_find_anagrams.py) |
+
+### Key Insight
+Min Stack: two stacks stay in sync.
+mins[-1] always = current minimum → O(1).
+
+Decode String: stack = memory.
+'[' saves state. ']' restores + repeats.
+
+Find Anagrams: Counter + fixed window.
+Slide → add right, remove left,
+compare counters each step.
+
+### Reflection
+[your honest thoughts]
 ---
 
 ## Day 5 — Challenge Day [upcoming]
