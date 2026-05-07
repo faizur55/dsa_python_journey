@@ -33,6 +33,9 @@ and the monotonic stack pattern.
 | 5 | [Four Sum II](https://leetcode.com/problems/4sum-ii/) | Medium | [code](./solutions/day3_four_sum_ii.py) |
 | 6 | [Majority Element](https://leetcode.com/problems/majority-element/) | Easy | [code](./solutions/day3_majority_element.py) |
 | 7 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | [code](./solutions/day3_longest_consecutive.py) |
+| 8 | [Min Stack](https://leetcode.com/problems/min-stack/) | Medium | [code](./solutions/day4_min_stack.py) |
+| 9 | [Decode String](https://leetcode.com/problems/decode-string/) | Medium | [code](./solutions/day4_decode_string.py) |
+| 10 | [Find All Anagrams](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Medium | [code](./solutions/day4_find_anagrams.py) |
 
 ---
 
@@ -40,8 +43,9 @@ and the monotonic stack pattern.
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 7
-Key Takeaway    : Stack = waiting room.
-                  Pop when answer found.
-                  Push when still waiting.
+Problems Solved : 10
+Key Takeaway    : Stack saves state.
+                  Pop restores it.
+                  Counter + sliding window
+                  = anagram detection O(n).
 ```
