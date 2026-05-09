@@ -114,7 +114,36 @@ compare counters each step.
 ---
 
 ## Day 5 — Challenge Day [upcoming]
+## Day 5 — Challenge Day
+**Date:** [your date]
+**Time:** [hours]
 
+### Problems
+| Problem | Solved Alone? | Solution |
+|---------|---------------|----------|
+| Asteroid Collision | ✅ Yes | [code](./solutions/day5_asteroid_collision.py) |
+| Top K Frequent Words | ✅ Yes | [code](./solutions/day5_top_k_frequent_words.py) |
+| Largest Rectangle | 🤝 Together | [code](./solutions/day5_largest_rectangle.py) |
+
+### Key Insight
+Stack = waiting room for right-moving asteroids.
+Negative asteroid fights anyone waiting.
+
+Sort by tuple (-freq, word) →
+frequency DESC + alphabet ASC in one sort.
+
+Monotonic increasing stack →
+when bar popped → found right boundary
+width = right - left - 1
+area = height × width
+
+### Biggest Lesson Today
+Paper trace FIRST. Code SECOND.
+Never Google before attempting.
+Struggle = learning happening. 💪
+
+### Reflection
+[your honest thoughts]
 ---
 
 ## Day 6 — Review [upcoming]
