@@ -36,6 +36,9 @@ and the monotonic stack pattern.
 | 8 | [Min Stack](https://leetcode.com/problems/min-stack/) | Medium | [code](./solutions/day4_min_stack.py) |
 | 9 | [Decode String](https://leetcode.com/problems/decode-string/) | Medium | [code](./solutions/day4_decode_string.py) |
 | 10 | [Find All Anagrams](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | Medium | [code](./solutions/day4_find_anagrams.py) |
+| 11 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | Medium | [code](./solutions/day5_asteroid_collision.py) |
+| 12 | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) | Medium | [code](./solutions/day5_top_k_frequent_words.py) |
+| 13 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Hard | [code](./solutions/day5_largest_rectangle.py) |
 
 ---
 
@@ -43,9 +46,7 @@ and the monotonic stack pattern.
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 10
-Key Takeaway    : Stack saves state.
-                  Pop restores it.
-                  Counter + sliding window
-                  = anagram detection O(n).
+Problems Solved : 13
+Key Takeaway    : Paper trace first.
+                  Code second. Always.
 ```
