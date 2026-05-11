@@ -46,8 +46,9 @@ and the monotonic stack pattern.
 ## 📊 Stats
 
 ```
-Status          : 🔄 In Progress
-Problems Solved : 13
+Status          : ✅ Complete
+Problems Solved : 14
 Key Takeaway    : Paper trace first.
                   Code second. Always.
+                  Tools + Patterns = solve anything.s.
 ```
