@@ -39,6 +39,7 @@ and the monotonic stack pattern.
 | 11 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | Medium | [code](./solutions/day5_asteroid_collision.py) |
 | 12 | [Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) | Medium | [code](./solutions/day5_top_k_frequent_words.py) |
 | 13 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Hard | [code](./solutions/day5_largest_rectangle.py) |
+| 14 | [Make The String Great](https://leetcode.com/problems/make-the-string-great/) | Easy | [code](./solutions/day6_make_string_great.py) |
 
 ---
 
