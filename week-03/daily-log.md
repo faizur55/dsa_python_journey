@@ -113,10 +113,9 @@ compare counters each step.
 [your honest thoughts]
 ---
 
-## Day 5 — Challenge Day [upcoming]
 ## Day 5 — Challenge Day
-**Date:** [your date]
-**Time:** [hours]
+**Date:** 19 March 2026
+**Time:** 5 hours
 
 ### Problems
 | Problem | Solved Alone? | Solution |
@@ -146,7 +145,47 @@ Struggle = learning happening. 💪
 [your honest thoughts]
 ---
 
-## Day 6 — Review [upcoming]
+## Day 6 — Review Day
+**Date:** 20 March 2026
+**Time:** 2.5+hours
+
+### Weak Spots Drilled
+- Monotonic stack — why store indices
+- Stack state saving — decode string
+- Collision conditions — asteroid
+
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Make The String Great | [code](./solutions/day6_make_string_great.py) |
+
+### Key Insight
+Store INDICES not values in monotonic stack
+because answer needs POSITION + VALUE.
+heights[index] = value ✅
+index = position ✅
+
+### Mental Framework
+Built complete framework — 8 layers:
+  → 3 questions
+  → 7 tools
+  → 9 patterns
+  → complexity cheat sheet
+  → 5 step process
+  → analogies
+  → common mistakes
+  → daily drill
+
+---
+
+## Day 7 — Publish
+**Date:** [your date]
+
+- [x] GitHub fully updated
+- [x] MENTAL_FRAMEWORK.py added to root
+- [x] Twitter thread posted
+- [x] Blog post published
+- [x] Week 3 complete
 
 ---
 
