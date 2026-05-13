@@ -56,8 +56,8 @@ Hours Logged          :  60 hours
 | Platform | Link |
 |----------|------|
 | 🐦 Twitter/X | #100DaysOfDSA |
-| 📝 Blog | [YOUR BLOG LINK] |
-| 💻 GitHub | This repo |
+| 📝 Blog | https://x.com/faizurrahaman__/status/2046066433000693868|
+| 💻 GitHub |  |
 
 ---
 
