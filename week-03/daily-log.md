@@ -179,7 +179,7 @@ Built complete framework — 8 layers:
 ---
 
 ## Day 7 — Publish
-**Date:** [your date]
+**Date:** 21 March 2026
 
 - [x] GitHub fully updated
 - [x] MENTAL_FRAMEWORK.py added to root
