@@ -31,9 +31,9 @@ Platform: LeetCode
 | Week | Topic | Daily Log | Blog | Status |
 |------|-------|-----------|------|--------|
 | [Week 1](./week-01/) | Python Foundations & Big-O | [📓 Log](./week-01/daily-log.md) | [Post](./week-01/post.md) | ✅ |
-| [Week 2](./week-02/) | Arrays & Patterns | [📓 Log](./week-02/daily-log.md) | [Post](./week-02/post.md) | ✅ |
-| [Week 3](./week-03/) | Stacks & Monotonic Stack | [📓 Log](./week-03/daily-log.md) | [Post](./week-03/post.md) | 🔄 | |
-| Week 4 | Linked Lists | — | — | ⏳ |
+| [Week 2](./week-02/) | Arrays & Patterns | [📓 Log](./week-02/daily-log.md) | [Post](./week-02/post.md)          | ✅ |
+| [Week 3](./week-03/) | Stacks & Monotonic Stack | [📓 Log](./week-03/daily-log.md) | [Post](./week-03/post.md)   | ✅ |
+| [Week 4](./week-04/) | Linked Lists & Recursion | [📓 Log](./week-04/daily-log.md) | [Post](./week-04/post.md)   | 🔄  |
 | Week 5 | Trees & Binary Search | — | — | ⏳ |
 | Week 6 | Sorting & Heaps | — | — | ⏳ |
 | Week 7 | Graphs | — | — | ⏳ |
