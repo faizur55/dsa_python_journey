@@ -57,7 +57,7 @@ Hours Logged          :  60 hours
 |----------|------|
 | 🐦 Twitter/X | #100DaysOfDSA |
 | 📝 Blog | https://x.com/faizurrahaman__/status/2046066433000693868|
-| 💻 GitHub |  |
+| 💻 GitHub | https://github.com/faizur55/dsa_python_journey |
 
 ---
 
