@@ -1,8 +1,8 @@
 # 📓 Week 4 Daily Log
 
 ## Day 1 — Linked List Structure & Traversal
-**Date:** [your date]
-**Time:** [hours]
+**Date:** 23 March 2026
+**Time:** 3 hours
 
 ### Topics
 - Node structure — val + next pointer
