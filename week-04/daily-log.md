@@ -31,7 +31,34 @@ Return dummy.next at the end.
 
 ---
 
-## Day 2 — [upcoming]
+## Day 2 — Linked List Patterns
+**Date:** [your date]
+**Time:** [hours]
+
+### Topics
+- Slow/Fast pointers — tortoise and hare
+- Gap technique — n steps ahead
+- Dummy node — edge case handler
+
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Linked List Cycle | [code](./solutions/day2_linked_list_cycle.py) |
+| Middle of Linked List | [code](./solutions/day2_middle_linked_list.py) |
+| Remove Nth From End | [code](./solutions/day2_remove_nth_from_end.py) |
+
+### Key Insight
+Slow/Fast: fast moves 2x → when fast ends
+slow is at middle. O(1) space!
+
+Gap technique: move fast n ahead →
+move both → slow lands n from end.
+
+Dummy node: never lose head reference.
+Always return dummy.next.
+
+### Reflection
+[your honest thoughts]
 
 ---
 
