@@ -43,11 +43,9 @@ Platform: LeetCode
 
 ---
 
-## 📊 Progress
-Total Problems Solved :  48+ / 60+
+Total Problems Solved :  51+ / 60+
 Weeks Completed       :  3   / 10
-Current Streak        :  23  day(s)
-Hours Logged          :  63 hours
+Current Streak        :  24  day(s)
 
 ---
 
