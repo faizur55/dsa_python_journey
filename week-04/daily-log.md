@@ -32,8 +32,8 @@ Return dummy.next at the end.
 ---
 
 ## Day 2 — Linked List Patterns
-**Date:** [your date]
-**Time:** [hours]
+**Date:** 24 March 2026
+**Time:** 
 
 ### Topics
 - Slow/Fast pointers — tortoise and hare
@@ -61,9 +61,36 @@ Always return dummy.next.
 [your honest thoughts]
 
 ---
+## Day 3 — Recursion
+**Date:** [your date]
+**Time:** 3 hours
 
-## Day 3 — [upcoming]
+### Topics
+- Base case + recursive case
+- Call stack — hidden O(n) space cost
+- Recursion tree — draw before coding
+- Iterative vs recursive trade-offs
 
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Reverse List (recursive) | [code](./solutions/day3_reverse_list_recursive.py) |
+| Merge Lists (recursive) | [code](./solutions/day3_merge_lists_recursive.py) |
+| Flatten Multilevel List | [code](./solutions/day3_flatten_multilevel.py) |
+
+### Key Insight
+Every recursive function needs:
+  1. BASE CASE    → when to stop
+  2. RECURSIVE CASE → smaller problem
+
+Iterative → O(1) space
+Recursive → O(n) space (call stack)
+Same time. Different space cost.
+
+Always draw recursion tree first!
+
+### Reflection
+[your honest thoughts]
 ---
 
 ## Day 4 — [upcoming]
