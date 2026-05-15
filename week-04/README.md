@@ -31,6 +31,9 @@ recursion as a problem-solving technique.
 | 3 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | [code](./solutions/day2_linked_list_cycle.py) |
 | 4 | [Middle of Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | Easy | [code](./solutions/day2_middle_linked_list.py) |
 | 5 | [Remove Nth From End](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | [code](./solutions/day2_remove_nth_from_end.py) |
+| 6 | [Reverse List Recursive](https://leetcode.com/problems/reverse-linked-list/) | Easy | [code](./solutions/day3_reverse_list_recursive.py) |
+| 7 | [Merge Lists Recursive](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [code](./solutions/day3_merge_lists_recursive.py) |
+| 8 | [Flatten Multilevel List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | Medium | [code](./solutions/day3_flatten_multilevel.py) |
 
 ---
 
@@ -38,8 +41,7 @@ recursion as a problem-solving technique.
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 5
-Key Takeaway    : Slow/fast pointers unlock
-                  cycle detection + middle finding.
-                  Dummy node handles edge cases.
+Problems Solved : 8
+Key Takeaway    : Recursion = base case + smaller problem.
+                  Hidden cost = O(n) call stack space.
 ```
