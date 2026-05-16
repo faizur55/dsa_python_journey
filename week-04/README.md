@@ -34,6 +34,9 @@ recursion as a problem-solving technique.
 | 6 | [Reverse List Recursive](https://leetcode.com/problems/reverse-linked-list/) | Easy | [code](./solutions/day3_reverse_list_recursive.py) |
 | 7 | [Merge Lists Recursive](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | [code](./solutions/day3_merge_lists_recursive.py) |
 | 8 | [Flatten Multilevel List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/) | Medium | [code](./solutions/day3_flatten_multilevel.py) |
+| 9  | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | Medium | [code](./solutions/day4_cycle_detection_ii.py) |
+| 10 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | Easy | [code](./solutions/day4_palindrome_linked_list.py) |
+| 11 | [Reorder List](https://leetcode.com/problems/reorder-list/) | Medium | [code](./solutions/day4_reorder_list.py) |
 
 ---
 
@@ -41,7 +44,8 @@ recursion as a problem-solving technique.
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 8
-Key Takeaway    : Recursion = base case + smaller problem.
-                  Hidden cost = O(n) call stack space.
+Problems Solved : 11
+Key Takeaway    : Find middle → reverse second half
+                  → compare or merge.
+                  Same 3 steps. Different goal.
 ```
