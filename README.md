@@ -43,9 +43,9 @@ Platform: LeetCode
 
 ---
 
-Total Problems Solved :  51+ / 60+
+Total Problems Solved :  54+ / 60+
 Weeks Completed       :  3   / 10
-Current Streak        :  24  day(s)
+Current Streak        :  25  day(s)
 
 ---
 
