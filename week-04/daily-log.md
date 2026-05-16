@@ -62,7 +62,7 @@ Always return dummy.next.
 
 ---
 ## Day 3 — Recursion
-**Date:** [your date]
+**Date:** 25 March 2026
 **Time:** 3 hours
 
 ### Topics
@@ -93,7 +93,37 @@ Always draw recursion tree first!
 [your honest thoughts]
 ---
 
-## Day 4 — [upcoming]
+## Day 4 — Slow/Fast Pointers Deeper
+**Date:** 26 March 2026
+**Time:** 3 hours
+
+### Topics
+- Floyd's algorithm — Phase 1 + Phase 2
+- Find cycle start mathematically
+- Palindrome — find middle + reverse + compare
+- Reorder — find middle + reverse + merge
+
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Linked List Cycle II | [code](./solutions/day4_cycle_detection_ii.py) |
+| Palindrome Linked List | [code](./solutions/day4_palindrome_linked_list.py) |
+| Reorder List | [code](./solutions/day4_reorder_list.py) |
+
+### Key Insight
+3 steps appear in ALL linked list problems:
+  Step 1 → find middle (slow/fast)
+  Step 2 → reverse second half
+  Step 3 → compare OR merge
+
+Step 2 — reverse:
+  SAVE → REVERSE → MOVE prev → MOVE current
+
+Step 3 — merge alternately:
+  SAVE both nexts → CONNECT → MOVE both
+
+### Reflection
+[your honest thoughts]
 
 ---
 
