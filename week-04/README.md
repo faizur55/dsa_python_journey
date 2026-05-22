@@ -37,6 +37,9 @@ recursion as a problem-solving technique.
 | 9  | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | Medium | [code](./solutions/day4_cycle_detection_ii.py) |
 | 10 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | Easy | [code](./solutions/day4_palindrome_linked_list.py) |
 | 11 | [Reorder List](https://leetcode.com/problems/reorder-list/) | Medium | [code](./solutions/day4_reorder_list.py) |
+| 12 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium | [code](./solutions/day5_add_two_numbers.py) |
+| 13 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | Medium | [code](./solutions/day5_copy_random_list.py) |
+| 14 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | [code](./solutions/day5_lru_cache.py) |
 
 ---
 
@@ -44,8 +47,9 @@ recursion as a problem-solving technique.
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 11
-Key Takeaway    : Find middle → reverse second half
-                  → compare or merge.
-                  Same 3 steps. Different goal.
+Problems Solved : 14
+Key Takeaway    : dict + doubly linked list
+                  = O(1) get and put.
+                  Design problems need
+                  two structures together.
 ```
