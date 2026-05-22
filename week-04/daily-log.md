@@ -129,7 +129,7 @@ Step 3 — merge alternately:
 
 ## Day 5 — Challenge Day
 **Date:** 27 March 2026
-**Time:** 4+
+**Time:** 4+ Hours
 
 ### Problems
 | Problem | Solved Alone? | Solution |
