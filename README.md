@@ -18,7 +18,7 @@ Platform: LeetCode
 | Phase | Weeks | Focus | Status |
 |-------|-------|-------|--------|
 | 🟣 Foundations | 1–2 | Big-O, Arrays, Patterns | ✅ Done |
-| 🔵 Core Structures | 3–4 | Stacks, Linked Lists | ⏳ |
+| 🔵 Core Structures | 3–4 | Stacks, Linked Lists | ✅ Done |
 | 🟢 Trees & Search | 5–6 | BST, Sorting, Heaps | ⏳ |
 | 🟡 Graphs | 7 | BFS, DFS, Topo Sort | ⏳ |
 | 🟠 DP | 8–9 | Memoization, Tries | ⏳ |
@@ -33,7 +33,7 @@ Platform: LeetCode
 | [Week 1](./week-01/) | Python Foundations & Big-O | [📓 Log](./week-01/daily-log.md) | [Post](./week-01/post.md) | ✅ |
 | [Week 2](./week-02/) | Arrays & Patterns | [📓 Log](./week-02/daily-log.md) | [Post](./week-02/post.md)          | ✅ |
 | [Week 3](./week-03/) | Stacks & Monotonic Stack | [📓 Log](./week-03/daily-log.md) | [Post](./week-03/post.md)   | ✅ |
-| [Week 4](./week-04/) | Linked Lists & Recursion | [📓 Log](./week-04/daily-log.md) | [Post](./week-04/post.md)   | 🔄  |
+| [Week 4](./week-04/) | Linked Lists & Recursion | [📓 Log](./week-04/daily-log.md) | [Post](./week-04/post.md)   | ✅ |
 | Week 5 | Trees & Binary Search | — | — | ⏳ |
 | Week 6 | Sorting & Heaps | — | — | ⏳ |
 | Week 7 | Graphs | — | — | ⏳ |
@@ -44,8 +44,8 @@ Platform: LeetCode
 ---
 
 Total Problems Solved :  57+ / 60+
-Weeks Completed       :  3   / 10
-Current Streak        :  26  day(s)
+Weeks Completed       :  4   / 10
+Current Streak        :  27 day(s)
 
 ---
 
@@ -68,12 +68,6 @@ Current Streak        :  26  day(s)
 ---
 
 *Started:1 March 2026 · Target: 30 June 2026*
-
-
-
-
-
-
 
 
 
