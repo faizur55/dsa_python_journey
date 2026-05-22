@@ -164,7 +164,7 @@ problems on LeetCode. Can't wait.
 ## Follow Along
 
 All 16 solutions with complexity analysis:
-→ GitHub: [YOUR GITHUB LINK]
+→ GitHub: https://github.com/faizur55
 
 Daily updates:
 → Twitter/X: #100DaysOfDSA
