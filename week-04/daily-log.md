@@ -127,7 +127,41 @@ Step 3 — merge alternately:
 
 ---
 
-## Day 5 — Challenge Day [upcoming]
+## Day 5 — Challenge Day
+**Date:** 27 March 2026
+**Time:** 4+
+
+### Problems
+| Problem | Solved Alone? | Solution |
+|---------|---------------|----------|
+| Add Two Numbers | ✅ Yes | [code](./solutions/day5_add_two_numbers.py) |
+| Copy List Random Pointer | ✅ Yes | [code](./solutions/day5_copy_random_list.py) |
+| LRU Cache | 🤝 Together | [code](./solutions/day5_lru_cache.py) |
+
+### Key Insights
+Add Two Numbers:
+  dummy node + carry handles all cases
+  while l1 or l2 or carry → never miss carry
+
+Copy Random List:
+  two pass → create all nodes first
+  then connect next and random
+  old_to_new dict maps old → new nodes
+
+LRU Cache:
+  dict → O(1) lookup
+  doubly linked list → O(1) order tracking
+  HEAD side = most recent
+  TAIL side = least recent
+  evict tail.prev when over capacity
+
+### Biggest Lesson
+Design problems = combine two structures.
+Ask: "what do I need O(1) for?"
+Then pick the right tool for each need.
+
+### Reflection
+[your honest thoughts]
 
 ---
 
