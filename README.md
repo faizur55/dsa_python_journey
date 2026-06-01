@@ -34,7 +34,7 @@ Platform: LeetCode
 | [Week 2](./week-02/) | Arrays & Patterns | [📓 Log](./week-02/daily-log.md) | [Post](./week-02/post.md)          | ✅ |
 | [Week 3](./week-03/) | Stacks & Monotonic Stack | [📓 Log](./week-03/daily-log.md) | [Post](./week-03/post.md)   | ✅ |
 | [Week 4](./week-04/) | Linked Lists & Recursion | [📓 Log](./week-04/daily-log.md) | [Post](./week-04/post.md)   | ✅ |
-| Week 5 | Trees & Binary Search | — | — | ⏳ |
+| [Week 5](./week-05/) | Trees & Binary Search | [📓 Log](./week-05/daily-log.md) | [Post](./week-05/post.md)      | 🔄 |
 | Week 6 | Sorting & Heaps | — | — | ⏳ |
 | Week 7 | Graphs | — | — | ⏳ |
 | Week 8 | Dynamic Programming | — | — | ⏳ |
@@ -42,10 +42,9 @@ Platform: LeetCode
 | Week 10 | Mastery & Review | — | — | ⏳ |
 
 ---
-
-Total Problems Solved :  57+ / 60+
+Total Problems Solved :  60+ / 60+
 Weeks Completed       :  4   / 10
-Current Streak        :  27 day(s)
+Current Streak        :  31  day(s)
 
 ---
 
