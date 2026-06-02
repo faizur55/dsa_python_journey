@@ -1,7 +1,7 @@
 # 📓 Week 5 Daily Log
 
 ## Day 1 — Binary Tree + DFS
-**Date:** 31 March 31 2026
+**Date:** 31 March 2026
 **Time:** 2 hours
 
 ### Topics
@@ -31,10 +31,9 @@ Most tree problems fit this template!
 
 ---
 
-## Day 2 — BFS + Level Order [upcoming]
 ## Day 2 — BFS + Level Order
-**Date:** [your date]
-**Time:** [hours]
+**Date:** 1 April 2026
+**Time:** 3 + hours
 
 ### Topics
 - BFS vs DFS — wide vs deep
