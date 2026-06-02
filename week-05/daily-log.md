@@ -32,7 +32,34 @@ Most tree problems fit this template!
 ---
 
 ## Day 2 — BFS + Level Order [upcoming]
+## Day 2 — BFS + Level Order
+**Date:** [your date]
+**Time:** [hours]
 
+### Topics
+- BFS vs DFS — wide vs deep
+- Queue for BFS — FIFO natural fit
+- Level order — freeze size each level
+- Minimum depth — BFS stops at first leaf
+
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Level Order Traversal | [code](./solutions/day2_level_order.py) |
+| Right Side View | [code](./solutions/day2_right_side_view.py) |
+| Minimum Depth | [code](./solutions/day2_min_depth.py) |
+
+### Key Insight
+len(queue) at start of each level
+= exact nodes in that level.
+Freeze it before the for loop!
+
+BFS superpower:
+first leaf found = minimum depth ✅
+DFS must visit ALL nodes ❌
+
+### Reflection
+[your honest thoughts]
 ---
 
 ## Day 3 — BST [upcoming]
