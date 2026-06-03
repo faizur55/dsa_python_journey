@@ -32,13 +32,17 @@ BST and binary search patterns.
 | 4 | [Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | [code](./solutions/day2_level_order.py) |
 | 5 | [Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | [code](./solutions/day2_right_side_view.py) |
 | 6 | [Minimum Depth](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | Easy | [code](./solutions/day2_min_depth.py) |
+| 7  | [Validate BST](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | [code](./solutions/day3_validate_bst.py) |
+| 8  | [Lowest Common Ancestor BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | [code](./solutions/day3_lowest_common_ancestor.py) |
+| 9  | [Kth Smallest in BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [code](./solutions/day3_kth_smallest.py) |
 ---
 
 ## 📊 Stats
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 6
-Key Takeaway    : BFS = queue + level by level.
-                  Shortest path → always BFS.
+Problems Solved : 9
+Key Takeaway    : BST inorder = sorted.
+                  Pass min/max boundaries
+                  to validate BST properly.
 ```
