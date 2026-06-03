@@ -61,7 +61,41 @@ DFS must visit ALL nodes ❌
 [your honest thoughts]
 ---
 
-## Day 3 — BST [upcoming]
+## Day 3 — Binary Search Tree
+**Date:** 2 April 2026
+**Time:** 3 hours
+
+### Topics
+- BST property — left < node < right
+- Search + Insert — O(log n)
+- Inorder = sorted order
+- Validate with min/max boundaries
+- LCA — split point = ancestor
+
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Validate BST | [code](./solutions/day3_validate_bst.py) |
+| Lowest Common Ancestor | [code](./solutions/day3_lowest_common_ancestor.py) |
+| Kth Smallest | [code](./solutions/day3_kth_smallest.py) |
+
+### Key Insight
+Validate BST:
+  Can't just check direct children.
+  Pass min/max boundaries down recursion.
+  Every node must satisfy BOTH boundaries.
+
+LCA in BST:
+  Both left → go left
+  Both right → go right
+  Split → current IS the LCA
+
+Kth Smallest:
+  Inorder = sorted → return kth element
+  Iterative inorder with stack → O(h) space
+
+### Reflection
+[your honest thoughts]
 
 ---
 
