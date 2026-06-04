@@ -35,14 +35,18 @@ BST and binary search patterns.
 | 7  | [Validate BST](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | [code](./solutions/day3_validate_bst.py) |
 | 8  | [Lowest Common Ancestor BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | [code](./solutions/day3_lowest_common_ancestor.py) |
 | 9  | [Kth Smallest in BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | [code](./solutions/day3_kth_smallest.py) |
+| 10 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | [code](./solutions/day4_binary_search.py) |
+| 11 | [Search Rotated Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | [code](./solutions/day4_search_rotated.py) |
+| 12 | [Find Minimum Rotated](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | [code](./solutions/day4_find_minimum.py) |
 ---
 
 ## 📊 Stats
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 9
-Key Takeaway    : BST inorder = sorted.
-                  Pass min/max boundaries
-                  to validate BST properly.
+Problems Solved : 12
+Key Takeaway    : One half always sorted
+                  in rotated array.
+                  Eliminate wrong half
+                  each step → O(log n).
 ```
