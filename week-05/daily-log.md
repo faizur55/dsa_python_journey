@@ -99,7 +99,36 @@ Kth Smallest:
 
 ---
 
-## Day 4 — Binary Search [upcoming]
+## Day 4 — Binary Search
+**Date:** 3 April 2026
+**Time:** 3 Hours
+
+### Topics
+- Binary search template
+- left <= right condition
+- mid = left + (right-left) // 2
+- Rotated array — one half always sorted
+- Find minimum — compare mid to right
+
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Binary Search | [code](./solutions/day4_binary_search.py) |
+| Search Rotated Array | [code](./solutions/day4_search_rotated.py) |
+| Find Minimum Rotated | [code](./solutions/day4_find_minimum.py) |
+
+### Key Insight
+Rotated array insight:
+  nums[left] <= nums[mid] → left sorted
+  nums[mid] < nums[right] → right sorted
+  ONE half always sorted → eliminate other
+
+Find minimum:
+  nums[mid] > nums[right] → min in right
+  nums[mid] < nums[right] → min in left (include mid)
+
+### Reflection
+[your honest thoughts]
 
 ---
 
