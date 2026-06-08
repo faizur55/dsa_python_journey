@@ -38,15 +38,19 @@ BST and binary search patterns.
 | 10 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | [code](./solutions/day4_binary_search.py) |
 | 11 | [Search Rotated Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | [code](./solutions/day4_search_rotated.py) |
 | 12 | [Find Minimum Rotated](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | [code](./solutions/day4_find_minimum.py) |
+| 13 | [Path Sum](https://leetcode.com/problems/path-sum/) | Easy | [code](./solutions/day5_path_sum.py) |
+| 14 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | Easy | [code](./solutions/day5_balanced_tree.py) |
+| 15 | [Max Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Hard | [code](./solutions/day5_max_path_sum.py) |
 ---
 
 ## 📊 Stats
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 12
-Key Takeaway    : One half always sorted
-                  in rotated array.
-                  Eliminate wrong half
-                  each step → O(log n).
+Problems Solved : 15
+Key Takeaway    : Tree recursion template
+                  solves almost everything.
+                  -1 as unbalanced signal.
+                  max(0, subtree) ignores
+                  negative contributions.
 ```
