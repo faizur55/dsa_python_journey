@@ -132,7 +132,38 @@ Find minimum:
 
 ---
 
-## Day 5 — Challenge Day [upcoming]
+## Day 5 — Challenge Day
+**Date:** 4 th April 2026
+**Time:** 4 hours
+
+### Problems
+| Problem | Solved Alone? | Solution |
+|---------|---------------|----------|
+| Path Sum | ✅ Paper trace first! | [code](./solutions/day5_path_sum.py) |
+| Balanced Binary Tree | 🤝 With hints | [code](./solutions/day5_balanced_tree.py) |
+| Max Path Sum | 🤝 With hints | [code](./solutions/day5_max_path_sum.py) |
+
+### Key Insights
+Path Sum:
+  subtract node.val each level
+  leaf + targetSum==0 → True
+
+Balanced Tree:
+  -1 signals unbalanced
+  propagate -1 upward
+  height difference > 1 → return -1
+
+Max Path Sum:
+  max(0, subtree) → ignore negatives
+  path = left + node + right → update max
+  return node + max(left, right) → go up
+
+### Biggest Win Today
+Drew tree on PAPER before coding
+Problem 1 — that habit is locked in! 🎯
+
+### Reflection
+[your honest thoughts]
 
 ---
 
