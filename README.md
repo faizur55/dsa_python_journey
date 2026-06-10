@@ -35,16 +35,16 @@ Platform: LeetCode
 | [Week 3](./week-03/) | Stacks & Monotonic Stack | [📓 Log](./week-03/daily-log.md) | [Post](./week-03/post.md)   | ✅ |
 | [Week 4](./week-04/) | Linked Lists & Recursion | [📓 Log](./week-04/daily-log.md) | [Post](./week-04/post.md)   | ✅ |
 | [Week 5](./week-05/) | Trees & Binary Search | [📓 Log](./week-05/daily-log.md) | [Post](./week-05/post.md)      | ✅ |
-| Week 6 | Sorting & Heaps | — | — |🔄 |
+| [Week 6](./week-06/) | Sorting & Heaps       | [📓 Log](./week-06/daily-log.md) | [Post](./week-06/post.md)      | 🔄 |
 | Week 7 | Graphs | — | — | ⏳ |
 | Week 8 | Dynamic Programming | — | — | ⏳ |
 | Week 9 | Advanced Trees | — | — | ⏳ |
 | Week 10 | Mastery & Review | — | — | ⏳ |
 
 ---
-Total Problems Solved :  72+ / 60+
+Total Problems Solved :  75+ / 60+
 Weeks Completed       :  5   / 10
-Current Streak        :  34  day(s) 🔥
+Current Streak        :  32  day(s) 🔥
 ---
 
 ## 🔗 Follow Along
