@@ -31,14 +31,17 @@ Complete the foundation (Weeks 1-6).
 | 1 | [Sort an Array](https://leetcode.com/problems/sort-an-array/) | Medium | [code](./solutions/day1_sort_array.py) |
 | 2 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | Medium | [code](./solutions/day1_sort_colors.py) |
 | 3 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | [code](./solutions/day1_merge_intervals.py) |
-
+| 4 | [Kth Largest Element](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | [code](./solutions/day2_kth_largest.py) |
+| 5 | [K Closest Points](https://leetcode.com/problems/k-closest-points-to-origin/) | Medium | [code](./solutions/day2_k_closest_points.py) |
+| 6 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | Medium | [code](./solutions/day2_task_scheduler.py) |
 ---
 
 ## 📊 Stats
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 3
-Key Takeaway    : Merge sort = divide + conquer.
-                  Sort first → merge intervals.
+Problems Solved : 6
+Key Takeaway    : Heap = hospital emergency room.
+                  K largest → min heap size K.
+                  heap[0] = Kth largest always.
 ```
