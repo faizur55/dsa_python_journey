@@ -46,11 +46,13 @@ BST and binary search patterns.
 ## 📊 Stats
 
 ```
-Status          : 🔄 In Progress
+Status          : ✅ Complete
 Problems Solved : 15
-Key Takeaway    : Tree recursion template
-                  solves almost everything.
-                  -1 as unbalanced signal.
-                  max(0, subtree) ignores
-                  negative contributions.
+Key Takeaway    : Trees = linked list nodes
+                  with two pointers.
+                  Recursion is the natural
+                  way to traverse them.
+                  Binary search eliminates
+                  half the search space
+                  every step.
 ```
