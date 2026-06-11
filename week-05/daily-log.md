@@ -167,8 +167,49 @@ Problem 1 — that habit is locked in! 🎯
 
 ---
 
-## Day 6 — Review [upcoming]
+## Day 6 — Review Day
+**Date:** 5 April 2026
+**Time:** 4+ hours
 
+### Weak Spots Drilled
+- BST rule — left SMALLER, right GREATER
+- Binary search left <= right
+- Tree recursion template
+- BFS vs DFS when to use each
+
+### Problems Revisited
+| Problem | Concept |
+|---------|---------|
+| Validate BST | min/max boundaries |
+| Binary Search | left <= right rule |
+| Max Path Sum | max(0, subtree) pattern |
+
+### Key Insight
+BST rule:
+  LEFT < node < RIGHT
+  Not the other way around!
+
+Binary search:
+  left <= right handles
+  single element case
+
+Tree template:
+  if not node: return base
+  left = solve(node.left)
+  right = solve(node.right)
+  return combine(left, right)
+
+### Reflection
+Week 5 was the hardest week so far.
+Trees + recursion clicked by Day 3.
+Binary search rotated array was tricky.
+Max Path Sum — Hard problem solved! 💪
 ---
 
-## Day 7 — Publish [upcoming]
+## Day 7 — Publish
+**Date:** 6 April 2026
+
+- [x] GitHub fully updated
+- [x] Twitter thread posted
+- [x] Blog post published
+- [x] Week 5 complete ✅
