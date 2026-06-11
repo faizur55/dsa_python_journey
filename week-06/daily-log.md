@@ -38,8 +38,41 @@ Merge Intervals:
 
 ---
 
-## Day 2 — Heap / Priority Queue [upcoming]
+## Day 2 — Heap & Priority Queue
+**Date:** 8 April 2026
+**Time:** 3+ hours
 
+### Topics
+- Min heap vs max heap
+- heapq in Python — push, pop, heapify
+- Max heap → negate values
+- Top-K pattern — min heap size K
+- Task scheduler — frequency formula
+
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Kth Largest Element | [code](./solutions/day2_kth_largest.py) |
+| K Closest Points | [code](./solutions/day2_k_closest_points.py) |
+| Task Scheduler | [code](./solutions/day2_task_scheduler.py) |
+
+### Key Insight
+Heap = hospital emergency room
+Most important always at top.
+
+Top-K largest → min heap size K:
+  Remove smallest when heap > K
+  heap[0] = Kth largest ✅
+
+K Closest → no sqrt needed!
+  x² + y² enough for comparison
+
+Task Scheduler:
+  result = (max_freq-1) * (n+1) + max_count
+  always take max with len(tasks)
+
+### Reflection
+[your honest thoughts]
 ---
 
 ## Day 3 — Top-K Problems [upcoming]
