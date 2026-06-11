@@ -150,5 +150,5 @@ Sorting + Heaps — final foundation week.
 After this → Graphs, DP, Tries (advanced).
 
 78+ problems in 5 weeks.
-All solutions: [YOUR GITHUB LINK]
+All solutions: https://github.com/faizur55
 Daily updates: #100DaysOfDSA
