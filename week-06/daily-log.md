@@ -75,7 +75,6 @@ Task Scheduler:
 [your honest thoughts]
 ---
 
-## Day 3 — Top-K Problems 
 ## Day 3 — Top-K Deeper + Median
 **Date:** 9 April 2026
 **Time:** 4 + hours
