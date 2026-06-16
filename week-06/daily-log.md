@@ -75,7 +75,47 @@ Task Scheduler:
 [your honest thoughts]
 ---
 
-## Day 3 — Top-K Problems [upcoming]
+## Day 3 — Top-K Problems 
+## Day 3 — Top-K Deeper + Median
+**Date:** 9 April 2026
+**Time:** 4 + hours
+
+### Topics
+- Two heap pattern — median stream
+- Max heap lower half + min heap upper half
+- Monotonic deque — sliding window max
+- IPO — two heaps working together
+
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Find Median From Stream | [code](./solutions/day3_find_median.py) |
+| Sliding Window Maximum | [code](./solutions/day3_sliding_window_max.py) |
+| IPO | [code](./solutions/day3_ipo.py) |
+
+### Key Insight
+Two Heap Pattern:
+  Max heap → lower half (negate values)
+  Min heap → upper half
+  Balance sizes → median O(1)
+
+Sliding Window Max:
+  Monotonic deque stores indices
+  Front = current window maximum
+  O(n) — each element in/out once
+
+IPO:
+  Min heap unlocks affordable projects
+  Max heap picks most profitable
+  Two heaps working together ✅
+
+### Connection To Previous Weeks
+Monotonic deque = Week 3 stack idea
+applied to sliding window!
+Tools + Patterns combining. 🔥
+
+### Reflection
+[your honest thoughts]
 
 ---
 
