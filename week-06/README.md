@@ -34,14 +34,18 @@ Complete the foundation (Weeks 1-6).
 | 4 | [Kth Largest Element](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Medium | [code](./solutions/day2_kth_largest.py) |
 | 5 | [K Closest Points](https://leetcode.com/problems/k-closest-points-to-origin/) | Medium | [code](./solutions/day2_k_closest_points.py) |
 | 6 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | Medium | [code](./solutions/day2_task_scheduler.py) |
+| 7 | [Find Median From Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [code](./solutions/day3_find_median.py) |
+| 8 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Hard | [code](./solutions/day3_sliding_window_max.py) |
+| 9 | [IPO](https://leetcode.com/problems/ipo/) | Hard | [code](./solutions/day3_ipo.py) |
 ---
 
 ## 📊 Stats
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 6
-Key Takeaway    : Heap = hospital emergency room.
-                  K largest → min heap size K.
-                  heap[0] = Kth largest always.
+Problems Solved : 9
+Key Takeaway    : Two heaps = median stream.
+                  Monotonic deque = window max.
+                  Always pick most profitable
+                  with max heap.
 ```
