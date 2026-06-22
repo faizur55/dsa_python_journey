@@ -118,11 +118,54 @@ Tools + Patterns combining. 🔥
 
 ---
 
-## Day 4 — Interval Problems [upcoming]
+## Day 4 — Interval Problems
+**Date:** 10 April 2026
+**Time:** 5+ hours
 
+### Topics
+- Overlap condition: B.start <= A.end
+- Insert Interval — 3 phases: before + merge + after
+- Non-overlapping — greedy: sort by END, keep earliest
+- Meeting Rooms II — min heap tracks room end times
+
+### Problems
+| Problem | Solution |
+|---------|----------|
+| Insert Interval | [code](./solutions/day4_insert_interval.py) |
+| Non-overlapping Intervals | [code](./solutions/day4_non_overlapping.py) |
+| Meeting Rooms II | [code](./solutions/day4_meeting_rooms.py) |
+
+### Key Insight
+Golden Rule:
+  Sort by START first — always!
+  Exception: non-overlapping → sort by END
+
+Overlap condition:
+  B.start <= A.end → overlap
+  B.start > A.end  → no overlap
+
+Insert Interval — 3 phases:
+  Phase 1: add all before (end < new.start)
+  Phase 2: merge all overlapping
+  Phase 3: add all remaining
+
+Non-overlapping — greedy:
+  Keep earliest ending interval
+  Overlap found → remove later ending
+  Why? Earlier end = more room for future
+
+Meeting Rooms II — heap:
+  Min heap stores room END times
+  heap[0] <= start → reuse room
+  Else → open new room
+  Heap size = answer ✅
+
+### Reflection
+[your honest thoughts]
 ---
 
 ## Day 5 — Challenge Day [upcoming]
+
 
 ---
 
