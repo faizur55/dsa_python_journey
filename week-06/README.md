@@ -37,15 +37,18 @@ Complete the foundation (Weeks 1-6).
 | 7 | [Find Median From Stream](https://leetcode.com/problems/find-median-from-data-stream/) | Hard | [code](./solutions/day3_find_median.py) |
 | 8 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Hard | [code](./solutions/day3_sliding_window_max.py) |
 | 9 | [IPO](https://leetcode.com/problems/ipo/) | Hard | [code](./solutions/day3_ipo.py) |
+| 10 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | Medium | [code](./solutions/day4_insert_interval.py) |
+| 11 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | [code](./solutions/day4_non_overlapping.py) |
+| 12 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | Medium | [code](./solutions/day4_meeting_rooms.py) |
 ---
 
 ## 📊 Stats
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 9
-Key Takeaway    : Two heaps = median stream.
-                  Monotonic deque = window max.
-                  Always pick most profitable
-                  with max heap.
+Problems Solved : 12
+Key Takeaway    : Sort by START for most intervals.
+                  Exception: remove overlaps → sort by END.
+                  Heap tracks room end times.
+                  Heap size = rooms needed.
 ```
