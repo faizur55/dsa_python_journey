@@ -42,9 +42,9 @@ Platform: LeetCode
 | Week 10 | Mastery & Review | — | — | ⏳ |
 
 ---
-Total Problems Solved :  78+ / 60+
+Total Problems Solved :  81+ / 60+
 Weeks Completed       :  5   / 10
-Current Streak        :  35  day(s) 🔥
+Current Streak        :  39  day(s) 🔥
 ---
 
 ## 🔗 Follow Along
