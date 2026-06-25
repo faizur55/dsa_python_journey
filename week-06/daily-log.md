@@ -164,8 +164,38 @@ Meeting Rooms II — heap:
 [your honest thoughts]
 ---
 
-## Day 5 — Challenge Day [upcoming]
+## Day 5 — Challenge Day
+**Date:** 11 April 2026
+**Time:** 6 + Hours
 
+### Problems
+| Problem | Solved Alone? | Solution |
+|---------|---------------|----------|
+| Meeting Rooms | 🤝 Together | [code](./solutions/day5_meeting_rooms.py) |
+| Kth Largest Stream | 🤝 Together | [code](./solutions/day5_kth_largest_stream.py) |
+| Car Pooling | 🤝 Together | [code](./solutions/day5_car_pooling.py) |
+
+### Key Insights
+Meeting Rooms:
+  Sort by start → check consecutive overlap
+  next.start < current.end → conflict!
+
+Kth Largest Stream:
+  Min heap size K always
+  heap[0] = Kth largest
+  self.k not k — use self everywhere!
+
+Car Pooling:
+  Difference array at each stop
+  +passengers at start, -passengers at end
+  Walk stops → if ever > capacity → False
+
+### Connection
+Car Pooling = prefix sum idea from Week 2!
+Events at positions → cumulative sum.
+
+### Reflection
+[your honest thoughts]
 
 ---
 
