@@ -40,15 +40,18 @@ Complete the foundation (Weeks 1-6).
 | 10 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | Medium | [code](./solutions/day4_insert_interval.py) |
 | 11 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | [code](./solutions/day4_non_overlapping.py) |
 | 12 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | Medium | [code](./solutions/day4_meeting_rooms.py) |
+| 13 | [Kth Largest in Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | Easy | [code](./solutions/day5_kth_largest_stream.py) |
+| 14 | [Car Pooling](https://leetcode.com/problems/car-pooling/) | Medium | [code](./solutions/day5_car_pooling.py) |
+| 15 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | Easy | [code](./solutions/day5_meeting_rooms.py) |
 ---
 
 ## 📊 Stats
 
 ```
 Status          : 🔄 In Progress
-Problems Solved : 12
-Key Takeaway    : Sort by START for most intervals.
-                  Exception: remove overlaps → sort by END.
-                  Heap tracks room end times.
-                  Heap size = rooms needed.
+Problems Solved : 15
+Key Takeaway    : Intervals → sort first always.
+                  Difference array = passengers
+                  at each stop.
+                  Min heap size K = Kth largest.
 ```
