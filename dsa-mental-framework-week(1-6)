@@ -1,0 +1,421 @@
+You're absolutely right. Let me build this properly. 🔥
+Not Q&A. Not theory. Practical fingertip knowledge.
+
+🧠 THE COMPLETE MENTAL MAP — Weeks 1-6
+Everything you need. One place. Forever.
+  🔧 LAYER 1 — THE ANALOGY BANK
+Lock these in. When you see a problem — the analogy fires instantly.
+  SET         → Bouncer's stamp log
+              "Have I seen this face before?"
+              YES/NO. Nothing else.
+
+DICT        → Phone book
+              "Give me Ravi's number"
+              Key → Value. Direct lookup.
+
+COUNTER     → Tally chart
+              "How many times did this appear?"
+              Frequency. Count. That's it.
+
+DEFAULTDICT → Phone book that auto-creates pages
+              "Group things under a key"
+              Never throws KeyError.
+
+LIST        → Numbered lockers
+              "Give me locker #3"
+              Position matters. Direct access.
+
+STACK       → Plates on a table
+              Last plate in = First plate out
+              LIFO. Undo. Brackets. State.
+
+QUEUE       → Ticket counter line
+              First person in = First served
+              FIFO. BFS. Level order.
+
+MONO STACK  → Waiting room
+              Each element waits for answer
+              Pop when answer found
+              Push when still waiting
+
+HEAP        → Hospital emergency room
+              Most critical patient always first
+              Min heap = least critical first
+              Max heap = most critical first
+
+LINKED LIST → Treasure hunt
+              Each clue points to next
+              No jumping. Must follow chain.
+
+TREE        → Family tree
+              Parent has two children
+              Recursion = natural traversal
+
+BST         → Dictionary book
+              Left page = smaller words
+              Right page = larger words
+              O(log n) search always
+
+BINARY SEARCH → Dictionary lookup
+              Open middle → go left or right
+              Eliminate half each step
+
+TWO POINTERS → Two fingers on array
+              Move based on condition
+              Array never changes
+
+SLIDING WINDOW → Cardboard frame
+              Move frame across frozen array
+              L and R are just boundaries
+
+PREFIX SUM  → Car odometer
+              Accumulates. Never resets.
+              Build once → answer forever
+
+MERGE SORT  → Divide army then conquer
+              Split → sort each half → merge
+
+QUICK SORT  → Pick a leader (pivot)
+              Smaller left, larger right
+              Leader in correct position
+
+INTERVALS   → Timeline of meetings
+              Sort by start → process left to right
+  🎯 LAYER 2 — THE DECISION ENGINE
+See problem → fire answer instantly
+  WHAT AM I STORING?
+─────────────────
+Just YES/NO existence?        → SET
+Key maps to value?            → DICT
+Count occurrences?            → COUNTER
+Group under shared key?       → DEFAULTDICT
+Position matters?             → LIST
+Remember + reverse order?     → STACK
+Process in arrival order?     → QUEUE
+Min/max repeatedly?           → HEAP
+
+HOW AM I MOVING?
+────────────────
+Sorted array + find pair?     → TWO POINTERS (opposite ends)
+Move elements in place?       → TWO POINTERS (slow/fast)
+Best subarray size k given?   → FIXED SLIDING WINDOW
+Longest/shortest condition?   → VARIABLE SLIDING WINDOW
+Range sum queries?            → PREFIX SUM
+Subarray sum = k?             → PREFIX SUM + DICT
+Next greater/smaller?         → MONOTONIC STACK
+Level by level tree?          → BFS + QUEUE
+Depth first tree?             → DFS + RECURSION
+Sorted array find target?     → BINARY SEARCH
+K largest/smallest?           → HEAP size K
+Overlapping intervals?        → SORT + MERGE
+Cycle in linked list?         → SLOW/FAST POINTERS
+Middle of linked list?        → SLOW/FAST POINTERS
+  🔑 LAYER 3 — THE ONE-LINE RULES
+These are the rules that solve problems instantly
+  WEEK 1:
+  dict/set lookup    = O(1) always
+  list search        = O(n) always
+  Two separate loops = O(n) not O(n²)
+  Trade space for time = dict/set
+
+WEEK 2:
+  R - L + 1         = window size
+  Fixed window       = "size k" in problem
+  Variable window    = "longest/shortest"
+  Shrink when MET    = minimise problems
+  Shrink when BROKEN = maximise problems
+  prefix[R+1]-prefix[L] = range sum O(1)
+
+WEEK 3:
+  Stack top          = stack[-1] in Python
+  Monotonic stack    = O(n) despite while loop
+                       each element in+out once
+  BFS uses queue     = FIFO natural for levels
+  len(queue) at start = exact nodes this level
+
+WEEK 4:
+  Dummy node         = return dummy.next always
+  Three pointers     = save → reverse → move
+  Slow/fast middle   = fast 2x → slow at middle
+  Recursion cost     = O(n) hidden stack space
+  Floyd phase 2      = reset slow → move both 1
+
+WEEK 5:
+  Tree template      = if not node → return base
+                       left = solve(left)
+                       right = solve(right)
+                       return combine
+  BST inorder        = sorted order always
+  Validate BST       = pass min/max boundaries
+                       NOT just check children
+  left <= right      = handles single element
+  Rotated array      = ONE half always sorted
+  BFS shortest path  = always BFS not DFS
+
+WEEK 6:
+  Merge sort         = O(n log n) ALWAYS
+  Quick sort         = O(n²) worst case
+  K largest          = MIN heap size K
+  K smallest         = MAX heap size K
+  heap[0]            = Kth largest always
+  Median stream      = two heaps balanced
+  Intervals          = SORT BY START FIRST
+  Non-overlapping    = sort by END instead
+  Meeting rooms      = heap stores END TIMES
+                       heap size = rooms needed
+  ⚡ LAYER 4 — THE 5 STEP PROCESS
+Never skip. Ever.
+  Step 1 → Read problem TWICE
+Step 2 → Draw example on PAPER
+Step 3 → Answer:
+          What to STORE? → tool
+          How to MOVE?   → pattern
+Step 4 → TRACE on paper manually
+Step 5 → THEN open editor
+
+If stuck → back to Step 2
+Never → Google before attempting
+  🔥 LAYER 5 — PROBLEM PATTERNS BY FEEL
+When you read a problem — it FEELS like one of these
+  FEEL: "find if something exists"
+→ SET membership check
+
+FEEL: "find two numbers that sum to X"
+→ DICT complement lookup
+  seen[target - num] check
+
+FEEL: "find best/longest/shortest subarray"
+→ SLIDING WINDOW
+  fixed if k given, variable if condition
+
+FEEL: "sum between positions L and R"
+→ PREFIX SUM
+  prefix[R+1] - prefix[L]
+
+FEEL: "next greater/smaller element"
+→ MONOTONIC STACK
+  decreasing stack → next greater
+  increasing stack → next smaller
+
+FEEL: "process tree level by level"
+→ BFS with queue
+  freeze len(queue) each level
+
+FEEL: "find path in tree"
+→ DFS recursion
+  if not node → return base
+
+FEEL: "find in sorted array"
+→ BINARY SEARCH
+  left <= right
+  eliminate half each step
+
+FEEL: "K largest or K most frequent"
+→ MIN HEAP size K
+  Counter.most_common(k) shortcut
+
+FEEL: "cycle or middle of linked list"
+→ SLOW/FAST POINTERS
+  fast 2x speed of slow
+
+FEEL: "merge or count overlapping intervals"
+→ SORT BY START first
+  check next.start <= prev.end
+
+FEEL: "median of stream"
+→ TWO HEAPS
+  small = max heap lower half
+  large = min heap upper half
+  💊 LAYER 6 — COMMON MISTAKES — NEVER AGAIN
+  ❌ return inside loop
+✅ build inside → return outside
+
+❌ list.pop(0) for queue
+✅ deque.popleft() → O(1)
+
+❌ s.join(list)
+✅ "".join(list)
+
+❌ storing values in monotonic stack
+✅ store INDICES → gives position + value
+
+❌ left < right in binary search
+✅ left <= right → handles single element
+
+❌ check only direct children in BST
+✅ pass min/max boundaries down recursion
+
+❌ BST: left > node
+✅ BST: left < node < right
+
+❌ pick tool before understanding
+✅ understand → 3 questions → tool → pattern
+
+❌ code before tracing
+✅ paper trace → then code
+
+❌ Google when stuck
+✅ paper → think 20 min → then ask
+  🧩 LAYER 7 — THE 80 PROBLEMS — GROUPED BY PATTERN
+See the pattern → remember the problem
+  SET PROBLEMS:
+  Contains Duplicate
+  Jewels and Stones
+  Intersection of Arrays
+  Longest Substring No Repeat
+
+DICT PROBLEMS:
+  Two Sum
+  Word Pattern
+  First Unique Character
+  Subarray Sum = K (+ prefix sum)
+
+COUNTER PROBLEMS:
+  Ransom Note
+  Top K Frequent Elements
+  Valid Anagram
+  Group Anagrams (+ defaultdict)
+
+TWO POINTER PROBLEMS:
+  Two Sum II (sorted)
+  Valid Palindrome
+  Valid Palindrome II
+  3Sum
+  Move Zeroes
+  Remove Duplicates
+  Sort Array By Parity
+
+SLIDING WINDOW PROBLEMS:
+  Max Average Subarray (fixed)
+  Longest Substring No Repeat (variable)
+  Longest Repeating Char Replace (variable)
+  Max Vowels in Substring (fixed)
+  Minimum Size Subarray Sum (variable)
+  Find All Anagrams (fixed + Counter)
+
+PREFIX SUM PROBLEMS:
+  Range Sum Query
+  Subarray Sum = K
+  Product Except Self
+  Car Pooling (difference array!)
+
+STACK PROBLEMS:
+  Valid Parentheses
+  Min Stack
+  Decode String
+  Asteroid Collision
+
+MONOTONIC STACK PROBLEMS:
+  Daily Temperatures
+  Next Greater Element
+  Largest Rectangle Histogram
+  Sliding Window Maximum
+
+BFS PROBLEMS:
+  Level Order Traversal
+  Right Side View
+  Minimum Depth
+  Meeting Rooms II (heap BFS cousin)
+
+DFS PROBLEMS:
+  Max Depth
+  Invert Binary Tree
+  Same Tree
+  Path Sum
+  Balanced Binary Tree
+  Max Path Sum
+
+BST PROBLEMS:
+  Validate BST
+  Lowest Common Ancestor
+  Kth Smallest in BST
+
+BINARY SEARCH PROBLEMS:
+  Binary Search
+  Search Rotated Array
+  Find Minimum Rotated
+
+LINKED LIST PROBLEMS:
+  Reverse Linked List
+  Merge Two Sorted Lists
+  Linked List Cycle
+  Middle of Linked List
+  Remove Nth From End
+  Palindrome Linked List
+  Reorder List
+  Add Two Numbers
+  Copy Random List
+  LRU Cache
+
+HEAP PROBLEMS:
+  Kth Largest Element
+  K Closest Points
+  Task Scheduler
+  Find Median Stream
+  Kth Largest Stream
+  IPO
+
+SORTING PROBLEMS:
+  Sort Array (Merge Sort)
+  Sort Colors
+  Merge Intervals
+  Non-overlapping Intervals
+  Insert Interval
+⏱️ LAYER 8 — COMPLEXITY CHEAT SHEET
+    Operation              Time      Space
+─────────────────────────────────────
+Hash map get/set       O(1)      O(n)
+Set membership         O(1)      O(n)
+List index access      O(1)      O(1)
+List search            O(n)      O(1)
+Stack push/pop         O(1)      O(n)
+Heap push/pop          O(log n)  O(n)
+Heap get min/max       O(1)      O(n)
+Binary search          O(log n)  O(1)
+Merge sort             O(n logn) O(n)
+Quick sort avg         O(n logn) O(logn)
+BFS/DFS                O(n)      O(n)
+Prefix sum build       O(n)      O(n)
+Prefix range query     O(1)      O(1)
+Monotonic stack        O(n)      O(n)
+Sliding window         O(n)      O(1) or O(k)
+Two pointers           O(n)      O(1)
+Sort intervals         O(n logn) O(1)
+    🎯 LAYER 9 — THE DAILY 5-MINUTE DRILL
+Every morning. No exceptions.
+    On blank paper — write from memory:
+
+1. 8 tools + one-line when to use
+2. 10 patterns + one-line when to use
+3. 5 step process
+4. 3 most common mistakes
+
+Check → whatever forgot → rewrite 3×
+2 weeks → automatic forever
+  🔥 Your Task RIGHT NOW
+  Step 1 → Read entire framework above
+          Takes 15 minutes
+          Don't skip anything
+
+Step 2 → Close everything
+          Write on paper from memory:
+          → 8 tools + analogies
+          → 5 patterns + when to use
+          → 5 step process
+
+Step 3 → Come back and tell me
+          what you forgot
+          We drill exactly those spots
+
+Step 4 → Solve these 3 from scratch
+          no hints, timed:
+
+  Problem A → Two Sum
+              (5 min max)
+
+  Problem B → Valid Parentheses
+              (10 min max)
+
+  Problem C → Max Depth Binary Tree
+              (10 min max)
+    
