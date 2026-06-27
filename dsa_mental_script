@@ -1,0 +1,666 @@
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib.colors import HexColor, white, black
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, HRFlowable
+from reportlab.lib.units import cm
+from reportlab.lib import colors
+
+doc = SimpleDocTemplate(
+    "/mnt/user-data/outputs/DSA_Mental_Framework.pdf",
+    pagesize=A4,
+    rightMargin=1.5*cm,
+    leftMargin=1.5*cm,
+    topMargin=1.5*cm,
+    bottomMargin=1.5*cm
+)
+
+# Colors
+DARK = HexColor('#0a0a0f')
+PURPLE = HexColor('#7c3aed')
+CYAN = HexColor('#06b6d4')
+GREEN = HexColor('#10b981')
+AMBER = HexColor('#f59e0b')
+RED = HexColor('#ef4444')
+LIGHT_PURPLE = HexColor('#eeedfe')
+LIGHT_GREEN = HexColor('#e1f5ee')
+LIGHT_AMBER = HexColor('#faeeda')
+LIGHT_RED = HexColor('#fcebeb')
+LIGHT_CYAN = HexColor('#e6f1fb')
+GRAY = HexColor('#1e1e2e')
+TEXT = HexColor('#e2e8f0')
+MUTED = HexColor('#64748b')
+SURFACE = HexColor('#111118')
+
+styles = getSampleStyleSheet()
+
+# Custom styles
+title_style = ParagraphStyle(
+    'CustomTitle',
+    parent=styles['Title'],
+    fontSize=28,
+    textColor=PURPLE,
+    spaceAfter=6,
+    fontName='Helvetica-Bold',
+    alignment=1
+)
+
+subtitle_style = ParagraphStyle(
+    'SubTitle',
+    parent=styles['Normal'],
+    fontSize=12,
+    textColor=MUTED,
+    spaceAfter=20,
+    fontName='Helvetica',
+    alignment=1
+)
+
+h1_style = ParagraphStyle(
+    'H1',
+    parent=styles['Heading1'],
+    fontSize=16,
+    textColor=white,
+    spaceBefore=16,
+    spaceAfter=8,
+    fontName='Helvetica-Bold',
+    backColor=PURPLE,
+    borderPadding=(6, 8, 6, 8),
+    leading=20
+)
+
+h2_style = ParagraphStyle(
+    'H2',
+    parent=styles['Heading2'],
+    fontSize=12,
+    textColor=PURPLE,
+    spaceBefore=12,
+    spaceAfter=6,
+    fontName='Helvetica-Bold',
+)
+
+body_style = ParagraphStyle(
+    'Body',
+    parent=styles['Normal'],
+    fontSize=9,
+    textColor=HexColor('#1a1a2e'),
+    spaceAfter=4,
+    fontName='Helvetica',
+    leading=14
+)
+
+code_style = ParagraphStyle(
+    'Code',
+    parent=styles['Normal'],
+    fontSize=8,
+    textColor=HexColor('#1a1a2e'),
+    fontName='Courier',
+    spaceAfter=3,
+    leading=12,
+    backColor=HexColor('#f8f9fa'),
+    borderPadding=(4, 6, 4, 6)
+)
+
+rule_style = ParagraphStyle(
+    'Rule',
+    parent=styles['Normal'],
+    fontSize=9,
+    textColor=HexColor('#1a1a2e'),
+    fontName='Helvetica',
+    spaceAfter=3,
+    leading=13,
+    leftIndent=10
+)
+
+story = []
+
+# ─── TITLE PAGE ───
+story.append(Spacer(1, 1*cm))
+story.append(Paragraph("🧠 DSA Mental Framework", title_style))
+story.append(Paragraph("Weeks 1–6 Complete Reference · Python · 80+ Problems", subtitle_style))
+story.append(HRFlowable(width="100%", thickness=2, color=PURPLE, spaceAfter=10))
+
+story.append(Paragraph(
+    "This framework contains everything you need to solve DSA problems at your fingertips. "
+    "Read it once, drill it daily, own it forever.",
+    body_style
+))
+story.append(Spacer(1, 0.3*cm))
+
+# ─── LAYER 1: ANALOGY BANK ───
+story.append(Paragraph("LAYER 1 — THE ANALOGY BANK", h1_style))
+story.append(Paragraph("Lock these in. When you see a problem — the analogy fires instantly.", body_style))
+
+analogies = [
+    ["TOOL", "ANALOGY", "USE WHEN"],
+    ["SET", "Bouncer's stamp log\n\"Have I seen this face?\"", "YES/NO existence check O(1)"],
+    ["DICT", "Phone book\n\"Give me Ravi's number\"", "Key → Value lookup O(1)"],
+    ["COUNTER", "Tally chart\n\"How many times?\"", "Frequency counting"],
+    ["DEFAULTDICT", "Phone book that auto-creates pages", "Group items under a key"],
+    ["LIST", "Numbered lockers\n\"Give me locker #3\"", "Indexed storage O(1)"],
+    ["STACK", "Plates on a table\nLast in = First out (LIFO)", "Brackets, undo, state saving"],
+    ["QUEUE", "Ticket counter line\nFirst in = First served (FIFO)", "BFS, level order traversal"],
+    ["MONO STACK", "Waiting room\nPop when answer found", "Next greater/smaller element"],
+    ["HEAP", "Hospital emergency room\nMost critical patient first", "K largest/smallest, median"],
+    ["LINKED LIST", "Treasure hunt\nEach clue points to next", "Dynamic insertions O(1) head"],
+    ["TREE", "Family tree\nParent has two children", "Hierarchical data, recursion"],
+    ["BST", "Dictionary book\nLeft=smaller, Right=larger", "O(log n) search"],
+    ["BINARY SEARCH", "Dictionary lookup\nOpen middle, go left or right", "Sorted array search O(log n)"],
+    ["TWO POINTERS", "Two fingers on array\nMove based on condition", "Pairs, palindromes, sorted"],
+    ["SLIDING WINDOW", "Cardboard frame\nMove across frozen array", "Best subarray problems"],
+    ["PREFIX SUM", "Car odometer\nAccumulates, never resets", "Range sum queries O(1)"],
+    ["MERGE SORT", "Divide army then conquer\nSplit → sort → merge", "Guaranteed O(n log n)"],
+    ["INTERVALS", "Timeline of meetings\nSort by start → process", "Overlap detection, merging"],
+]
+
+analogy_table = Table(analogies, colWidths=[3*cm, 6*cm, 6*cm])
+analogy_table.setStyle(TableStyle([
+    ('BACKGROUND', (0,0), (-1,0), PURPLE),
+    ('TEXTCOLOR', (0,0), (-1,0), white),
+    ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0,0), (-1,0), 9),
+    ('ALIGN', (0,0), (-1,-1), 'LEFT'),
+    ('VALIGN', (0,0), (-1,-1), 'TOP'),
+    ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
+    ('FONTSIZE', (0,1), (-1,-1), 8),
+    ('ROWBACKGROUNDS', (0,1), (-1,-1), [HexColor('#f8f8ff'), white]),
+    ('GRID', (0,0), (-1,-1), 0.5, HexColor('#cccccc')),
+    ('TOPPADDING', (0,0), (-1,-1), 4),
+    ('BOTTOMPADDING', (0,0), (-1,-1), 4),
+    ('LEFTPADDING', (0,0), (-1,-1), 6),
+    ('FONTNAME', (0,1), (0,-1), 'Helvetica-Bold'),
+    ('TEXTCOLOR', (0,1), (0,-1), PURPLE),
+]))
+story.append(analogy_table)
+story.append(Spacer(1, 0.3*cm))
+
+# ─── LAYER 2: DECISION ENGINE ───
+story.append(Paragraph("LAYER 2 — THE DECISION ENGINE", h1_style))
+story.append(Paragraph("See problem → fire answer instantly. Ask these 2 questions first.", body_style))
+
+story.append(Paragraph("WHAT AM I STORING?", h2_style))
+storing = [
+    ["QUESTION", "TOOL"],
+    ["Just YES/NO existence?", "SET"],
+    ["Key maps to value?", "DICT"],
+    ["Count occurrences?", "COUNTER"],
+    ["Group under shared key?", "DEFAULTDICT"],
+    ["Position matters?", "LIST"],
+    ["Remember + reverse order?", "STACK"],
+    ["Process in arrival order?", "QUEUE (deque)"],
+    ["Min/max repeatedly?", "HEAP"],
+]
+t1 = Table(storing, colWidths=[10*cm, 5*cm])
+t1.setStyle(TableStyle([
+    ('BACKGROUND', (0,0), (-1,0), CYAN),
+    ('TEXTCOLOR', (0,0), (-1,0), white),
+    ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0,0), (-1,0), 9),
+    ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
+    ('FONTSIZE', (0,1), (-1,-1), 8),
+    ('ROWBACKGROUNDS', (0,1), (-1,-1), [LIGHT_CYAN, white]),
+    ('GRID', (0,0), (-1,-1), 0.5, HexColor('#cccccc')),
+    ('TOPPADDING', (0,0), (-1,-1), 4),
+    ('BOTTOMPADDING', (0,0), (-1,-1), 4),
+    ('LEFTPADDING', (0,0), (-1,-1), 6),
+    ('FONTNAME', (1,1), (1,-1), 'Helvetica-Bold'),
+    ('TEXTCOLOR', (1,1), (1,-1), CYAN),
+]))
+story.append(t1)
+story.append(Spacer(1, 0.2*cm))
+
+story.append(Paragraph("HOW AM I MOVING?", h2_style))
+moving = [
+    ["SITUATION", "PATTERN"],
+    ["Sorted array + find pair?", "TWO POINTERS (opposite ends)"],
+    ["Move elements in place?", "TWO POINTERS (slow/fast)"],
+    ["Best subarray size k given?", "FIXED SLIDING WINDOW"],
+    ["Longest/shortest condition?", "VARIABLE SLIDING WINDOW"],
+    ["Range sum queries?", "PREFIX SUM"],
+    ["Subarray sum = k?", "PREFIX SUM + DICT"],
+    ["Next greater/smaller?", "MONOTONIC STACK"],
+    ["Level by level tree?", "BFS + QUEUE"],
+    ["Depth first tree?", "DFS + RECURSION"],
+    ["Sorted array find target?", "BINARY SEARCH"],
+    ["K largest/smallest?", "HEAP size K"],
+    ["Overlapping intervals?", "SORT BY START + MERGE"],
+    ["Cycle in linked list?", "SLOW/FAST POINTERS"],
+    ["Middle of linked list?", "SLOW/FAST POINTERS"],
+]
+t2 = Table(moving, colWidths=[10*cm, 5*cm])
+t2.setStyle(TableStyle([
+    ('BACKGROUND', (0,0), (-1,0), GREEN),
+    ('TEXTCOLOR', (0,0), (-1,0), white),
+    ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0,0), (-1,0), 9),
+    ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
+    ('FONTSIZE', (0,1), (-1,-1), 8),
+    ('ROWBACKGROUNDS', (0,1), (-1,-1), [LIGHT_GREEN, white]),
+    ('GRID', (0,0), (-1,-1), 0.5, HexColor('#cccccc')),
+    ('TOPPADDING', (0,0), (-1,-1), 4),
+    ('BOTTOMPADDING', (0,0), (-1,-1), 4),
+    ('LEFTPADDING', (0,0), (-1,-1), 6),
+    ('FONTNAME', (1,1), (1,-1), 'Helvetica-Bold'),
+    ('TEXTCOLOR', (1,1), (1,-1), GREEN),
+]))
+story.append(t2)
+story.append(Spacer(1, 0.3*cm))
+
+# ─── LAYER 3: ONE-LINE RULES ───
+story.append(Paragraph("LAYER 3 — THE ONE-LINE RULES", h1_style))
+story.append(Paragraph("These rules solve problems instantly. Memorise every single one.", body_style))
+
+weeks_rules = [
+    ("WEEK 1 — TOOLS", PURPLE, LIGHT_PURPLE, [
+        "dict/set lookup = O(1) always",
+        "list search = O(n) always",
+        "Two separate loops = O(n) not O(n²)",
+        "Trade space for time = use dict/set",
+        "Counter('aab') = {'a':2, 'b':1} instantly",
+    ]),
+    ("WEEK 2 — PATTERNS", CYAN, LIGHT_CYAN, [
+        "R - L + 1 = window size (both endpoints included)",
+        "Fixed window = 'size k' in problem",
+        "Variable window = 'longest/shortest'",
+        "Shrink when MET = minimise problems",
+        "Shrink when BROKEN = maximise problems",
+        "prefix[R+1] - prefix[L] = range sum O(1)",
+    ]),
+    ("WEEK 3 — STRUCTURES", GREEN, LIGHT_GREEN, [
+        "Stack top = stack[-1] in Python",
+        "Monotonic stack = O(n) despite while loop (each element in+out once)",
+        "BFS uses queue = FIFO natural for levels",
+        "len(queue) at loop start = exact nodes this level",
+        "Decreasing stack → finds next GREATER element",
+        "Increasing stack → finds next SMALLER element",
+    ]),
+    ("WEEK 4 — LINKED LISTS", AMBER, LIGHT_AMBER, [
+        "Dummy node → return dummy.next always",
+        "Three pointers = SAVE next → REVERSE → MOVE both",
+        "Slow/fast middle = fast 2x speed → slow at middle",
+        "Recursion cost = O(n) hidden call stack space",
+        "Floyd phase 2 = reset slow to head → move both 1 step",
+        "Iterative = O(1) space, Recursive = O(n) space",
+    ]),
+    ("WEEK 5 — TREES", RED, LIGHT_RED, [
+        "Tree template: if not node → return base; left=solve(left); right=solve(right); return combine",
+        "BST inorder = sorted order ALWAYS",
+        "Validate BST = pass min/max boundaries, NOT just check children",
+        "left <= right in binary search = handles single element case",
+        "Rotated array = ONE half always sorted → eliminate wrong half",
+        "BFS for shortest path, DFS for depth problems",
+    ]),
+    ("WEEK 6 — SORTING + HEAPS", HexColor('#8b5cf6'), HexColor('#f3f0ff'), [
+        "Merge sort = O(n log n) ALWAYS (guaranteed)",
+        "Quick sort = O(n²) worst case (avoid for interviews)",
+        "K largest = MIN heap size K (pop smallest to keep largest)",
+        "K smallest = MAX heap size K",
+        "heap[0] = Kth largest ALWAYS",
+        "Median stream = two heaps (small=lower, large=upper) balanced",
+        "Intervals = SORT BY START TIME FIRST (no exceptions!)",
+        "Non-overlapping intervals = sort by END time instead",
+        "Meeting rooms = heap stores END TIMES, heap size = rooms needed",
+    ]),
+]
+
+for week_title, color, bg_color, rules in weeks_rules:
+    week_style = ParagraphStyle(
+        f'Week_{week_title}',
+        parent=styles['Normal'],
+        fontSize=10,
+        textColor=white,
+        fontName='Helvetica-Bold',
+        backColor=color,
+        borderPadding=(5, 8, 5, 8),
+        spaceAfter=4,
+        spaceBefore=8
+    )
+    story.append(Paragraph(week_title, week_style))
+    for rule in rules:
+        rule_data = [[Paragraph(f"→ {rule}", ParagraphStyle('r', parent=styles['Normal'],
+                     fontSize=8, fontName='Helvetica', leading=12))]]
+        rt = Table(rule_data, colWidths=[15*cm])
+        rt.setStyle(TableStyle([
+            ('BACKGROUND', (0,0), (-1,-1), bg_color),
+            ('TOPPADDING', (0,0), (-1,-1), 3),
+            ('BOTTOMPADDING', (0,0), (-1,-1), 3),
+            ('LEFTPADDING', (0,0), (-1,-1), 10),
+            ('LINEBELOW', (0,0), (-1,-1), 0.3, HexColor('#dddddd')),
+        ]))
+        story.append(rt)
+
+story.append(Spacer(1, 0.3*cm))
+
+# ─── LAYER 4: 5 STEP PROCESS ───
+story.append(Paragraph("LAYER 4 — THE 5 STEP PROCESS", h1_style))
+story.append(Paragraph("Never skip. Ever. This is the difference between solving and struggling.", body_style))
+
+steps = [
+    ["STEP", "ACTION", "DETAIL"],
+    ["1", "Read problem TWICE", "Understand before anything else"],
+    ["2", "Draw example on PAPER", "Small input, trace by hand"],
+    ["3", "Answer 3 Questions", "What to STORE? How to MOVE? Time+Space?"],
+    ["4", "TRACE on paper", "Walk through your approach manually"],
+    ["5", "THEN open editor", "Code matches your trace exactly"],
+    ["!", "If stuck → Step 2", "Never Google before 20 min attempt"],
+]
+
+steps_table = Table(steps, colWidths=[1.5*cm, 5*cm, 8.5*cm])
+steps_table.setStyle(TableStyle([
+    ('BACKGROUND', (0,0), (-1,0), AMBER),
+    ('TEXTCOLOR', (0,0), (-1,0), white),
+    ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0,0), (-1,0), 9),
+    ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
+    ('FONTSIZE', (0,1), (-1,-1), 9),
+    ('ROWBACKGROUNDS', (0,1), (-1,-1), [LIGHT_AMBER, white]),
+    ('GRID', (0,0), (-1,-1), 0.5, HexColor('#cccccc')),
+    ('TOPPADDING', (0,0), (-1,-1), 5),
+    ('BOTTOMPADDING', (0,0), (-1,-1), 5),
+    ('LEFTPADDING', (0,0), (-1,-1), 6),
+    ('FONTNAME', (0,1), (0,-1), 'Helvetica-Bold'),
+    ('TEXTCOLOR', (0,1), (0,-1), AMBER),
+    ('FONTNAME', (1,1), (1,-1), 'Helvetica-Bold'),
+    ('BACKGROUND', (0,6), (-1,6), RED),
+    ('TEXTCOLOR', (0,6), (-1,6), white),
+    ('FONTNAME', (0,6), (-1,6), 'Helvetica-Bold'),
+]))
+story.append(steps_table)
+story.append(Spacer(1, 0.3*cm))
+
+# ─── LAYER 5: PROBLEM PATTERNS BY FEEL ───
+story.append(Paragraph("LAYER 5 — PROBLEM PATTERNS BY FEEL", h1_style))
+story.append(Paragraph("When you read a problem — it FEELS like one of these. Train this instinct.", body_style))
+
+feels = [
+    ["FEEL / KEYWORD IN PROBLEM", "APPROACH"],
+    ["'find if something exists'", "SET membership check O(1)"],
+    ["'two numbers sum to X'", "DICT complement: seen[target-num]"],
+    ["'best/longest/shortest subarray'", "SLIDING WINDOW (variable if condition, fixed if k given)"],
+    ["'sum between positions L and R'", "PREFIX SUM: prefix[R+1] - prefix[L]"],
+    ["'next greater/smaller element'", "MONOTONIC STACK (decreasing→greater, increasing→smaller)"],
+    ["'process tree level by level'", "BFS + freeze len(queue) each level"],
+    ["'find path root to leaf'", "DFS recursion with running total"],
+    ["'find in sorted array'", "BINARY SEARCH: left <= right, eliminate half"],
+    ["'K largest or K most frequent'", "MIN HEAP size K: heap[0] = Kth largest"],
+    ["'cycle or middle of linked list'", "SLOW/FAST POINTERS (fast 2x speed)"],
+    ["'merge or count overlapping intervals'", "SORT BY START → check next.start <= prev.end"],
+    ["'median of stream'", "TWO HEAPS: small=max heap lower, large=min heap upper"],
+    ["'minimum rooms/containers needed'", "HEAP stores end times, heap size = answer"],
+    ["'passengers at each stop'", "DIFFERENCE ARRAY: +at start, -at end, prefix sum"],
+]
+
+feels_table = Table(feels, colWidths=[8*cm, 7*cm])
+feels_table.setStyle(TableStyle([
+    ('BACKGROUND', (0,0), (-1,0), HexColor('#7c3aed')),
+    ('TEXTCOLOR', (0,0), (-1,0), white),
+    ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0,0), (-1,0), 9),
+    ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
+    ('FONTSIZE', (0,1), (-1,-1), 8),
+    ('ROWBACKGROUNDS', (0,1), (-1,-1), [LIGHT_PURPLE, white]),
+    ('GRID', (0,0), (-1,-1), 0.5, HexColor('#cccccc')),
+    ('TOPPADDING', (0,0), (-1,-1), 4),
+    ('BOTTOMPADDING', (0,0), (-1,-1), 4),
+    ('LEFTPADDING', (0,0), (-1,-1), 6),
+    ('FONTNAME', (0,1), (0,-1), 'Courier-Bold'),
+    ('TEXTCOLOR', (0,1), (0,-1), HexColor('#3c3489')),
+]))
+story.append(feels_table)
+story.append(Spacer(1, 0.3*cm))
+
+# ─── LAYER 6: NEVER DO THESE AGAIN ───
+story.append(Paragraph("LAYER 6 — NEVER DO THESE AGAIN", h1_style))
+
+mistakes = [
+    ["WRONG ❌", "RIGHT ✅", "WHY"],
+    ["return inside loop", "build inside → return OUTSIDE", "exits after first iteration"],
+    ["list.pop(0) for queue", "deque.popleft()", "pop(0) is O(n), popleft is O(1)"],
+    ["s.join(list)", '"".join(list)', "s adds input string between each char"],
+    ["store VALUES in mono stack", "store INDICES", "need position AND value for width calc"],
+    ["while left < right", "while left <= right", "misses single element where left==right"],
+    ["check only direct children in BST", "pass min/max boundaries down", "subtree can violate constraint"],
+    ["left > node in BST", "left < node < right", "BST rule: smaller left, larger right"],
+    ["Google when stuck", "paper → think 20 min → ask", "Googling = zero learning"],
+    ["pick tool before understanding", "understand → 3 questions → tool", "tool follows from problem"],
+    ["code before tracing", "trace on paper → then code", "paper catches bugs before they happen"],
+    ["k inside add method (KthLargest)", "self.k always", "k not in scope outside __init__"],
+]
+
+mistakes_table = Table(mistakes, colWidths=[5*cm, 5.5*cm, 4.5*cm])
+mistakes_table.setStyle(TableStyle([
+    ('BACKGROUND', (0,0), (-1,0), RED),
+    ('TEXTCOLOR', (0,0), (-1,0), white),
+    ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0,0), (-1,0), 9),
+    ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
+    ('FONTSIZE', (0,1), (-1,-1), 8),
+    ('ROWBACKGROUNDS', (0,1), (-1,-1), [LIGHT_RED, white]),
+    ('GRID', (0,0), (-1,-1), 0.5, HexColor('#cccccc')),
+    ('TOPPADDING', (0,0), (-1,-1), 4),
+    ('BOTTOMPADDING', (0,0), (-1,-1), 4),
+    ('LEFTPADDING', (0,0), (-1,-1), 6),
+    ('TEXTCOLOR', (0,1), (0,-1), RED),
+    ('FONTNAME', (0,1), (0,-1), 'Helvetica-Bold'),
+    ('TEXTCOLOR', (1,1), (1,-1), GREEN),
+    ('FONTNAME', (1,1), (1,-1), 'Helvetica-Bold'),
+]))
+story.append(mistakes_table)
+story.append(Spacer(1, 0.3*cm))
+
+# ─── LAYER 7: COMPLEXITY CHEAT SHEET ───
+story.append(Paragraph("LAYER 7 — COMPLEXITY CHEAT SHEET", h1_style))
+
+complexity = [
+    ["OPERATION", "TIME", "SPACE"],
+    ["Hash map get/set", "O(1)", "O(n)"],
+    ["Set membership", "O(1)", "O(n)"],
+    ["List index access", "O(1)", "O(1)"],
+    ["List search", "O(n)", "O(1)"],
+    ["Stack push/pop", "O(1)", "O(n)"],
+    ["Heap push/pop", "O(log n)", "O(n)"],
+    ["Heap get min/max", "O(1)", "O(n)"],
+    ["Binary search", "O(log n)", "O(1)"],
+    ["Merge sort", "O(n log n)", "O(n)"],
+    ["Quick sort avg", "O(n log n)", "O(log n)"],
+    ["BFS / DFS", "O(n)", "O(n)"],
+    ["Prefix sum build", "O(n)", "O(n)"],
+    ["Prefix range query", "O(1)", "O(1)"],
+    ["Monotonic stack", "O(n)", "O(n)"],
+    ["Sliding window", "O(n)", "O(1) or O(k)"],
+    ["Two pointers", "O(n)", "O(1)"],
+    ["Sort intervals", "O(n log n)", "O(1)"],
+    ["Single loop", "O(n)", "—"],
+    ["Two nested loops", "O(n^2)", "—"],
+    ["Two separate loops", "O(n)", "—"],
+]
+
+complexity_table = Table(complexity, colWidths=[8*cm, 3.5*cm, 3.5*cm])
+complexity_table.setStyle(TableStyle([
+    ('BACKGROUND', (0,0), (-1,0), HexColor('#059669')),
+    ('TEXTCOLOR', (0,0), (-1,0), white),
+    ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0,0), (-1,0), 9),
+    ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
+    ('FONTSIZE', (0,1), (-1,-1), 8),
+    ('ROWBACKGROUNDS', (0,1), (-1,-1), [LIGHT_GREEN, white]),
+    ('GRID', (0,0), (-1,-1), 0.5, HexColor('#cccccc')),
+    ('TOPPADDING', (0,0), (-1,-1), 4),
+    ('BOTTOMPADDING', (0,0), (-1,-1), 4),
+    ('LEFTPADDING', (0,0), (-1,-1), 6),
+    ('FONTNAME', (1,1), (1,-1), 'Courier-Bold'),
+    ('TEXTCOLOR', (1,1), (1,-1), HexColor('#059669')),
+    ('FONTNAME', (2,1), (2,-1), 'Courier'),
+    ('TEXTCOLOR', (2,1), (2,-1), CYAN),
+]))
+story.append(complexity_table)
+story.append(Spacer(1, 0.3*cm))
+
+# ─── LAYER 8: ALL 80+ PROBLEMS GROUPED ───
+story.append(Paragraph("LAYER 8 — ALL 80+ PROBLEMS GROUPED BY PATTERN", h1_style))
+story.append(Paragraph("See the pattern → remember the problem. See the problem → remember the pattern.", body_style))
+
+problem_groups = [
+    ("SET PROBLEMS", PURPLE, [
+        "Contains Duplicate", "Jewels and Stones",
+        "Intersection of Two Arrays", "Longest Substring No Repeat",
+    ]),
+    ("DICT PROBLEMS", CYAN, [
+        "Two Sum", "Word Pattern", "First Unique Character",
+        "Subarray Sum = K (+ prefix sum)",
+    ]),
+    ("COUNTER + DEFAULTDICT", GREEN, [
+        "Ransom Note", "Top K Frequent Elements",
+        "Valid Anagram", "Group Anagrams",
+        "Four Sum II", "Majority Element",
+    ]),
+    ("TWO POINTER PROBLEMS", AMBER, [
+        "Two Sum II (sorted)", "Valid Palindrome",
+        "Valid Palindrome II", "3Sum",
+        "Move Zeroes", "Remove Duplicates",
+        "Sort Array By Parity",
+    ]),
+    ("SLIDING WINDOW PROBLEMS", RED, [
+        "Max Average Subarray (fixed)",
+        "Longest Substring No Repeat (variable)",
+        "Longest Repeating Char Replace (variable)",
+        "Max Vowels in Substring (fixed)",
+        "Minimum Size Subarray Sum (variable)",
+        "Find All Anagrams (fixed + Counter)",
+    ]),
+    ("PREFIX SUM PROBLEMS", HexColor('#8b5cf6'), [
+        "Range Sum Query", "Subarray Sum = K",
+        "Product Except Self", "Car Pooling (difference array)",
+        "Continuous Subarray Sum",
+    ]),
+    ("STACK PROBLEMS", HexColor('#0891b2'), [
+        "Valid Parentheses", "Min Stack",
+        "Decode String", "Asteroid Collision",
+        "Make The String Great",
+    ]),
+    ("MONOTONIC STACK", HexColor('#d97706'), [
+        "Daily Temperatures", "Next Greater Element I",
+        "Largest Rectangle in Histogram",
+        "Sliding Window Maximum",
+    ]),
+    ("BFS PROBLEMS", HexColor('#059669'), [
+        "Level Order Traversal", "Right Side View",
+        "Minimum Depth", "Meeting Rooms II",
+    ]),
+    ("DFS PROBLEMS", HexColor('#7c3aed'), [
+        "Max Depth", "Invert Binary Tree",
+        "Same Tree", "Path Sum",
+        "Balanced Binary Tree", "Max Path Sum",
+    ]),
+    ("BST PROBLEMS", HexColor('#dc2626'), [
+        "Validate BST", "Lowest Common Ancestor",
+        "Kth Smallest in BST",
+    ]),
+    ("BINARY SEARCH", HexColor('#0284c7'), [
+        "Binary Search", "Search Rotated Array",
+        "Find Minimum Rotated",
+    ]),
+    ("LINKED LIST PROBLEMS", HexColor('#65a30d'), [
+        "Reverse Linked List", "Merge Two Sorted Lists",
+        "Linked List Cycle", "Middle of Linked List",
+        "Remove Nth From End", "Palindrome Linked List",
+        "Reorder List", "Add Two Numbers",
+        "Copy Random List", "LRU Cache",
+        "Linked List Cycle II", "Flatten Multilevel List",
+    ]),
+    ("HEAP PROBLEMS", HexColor('#9333ea'), [
+        "Kth Largest Element", "K Closest Points",
+        "Task Scheduler", "Find Median From Stream",
+        "Kth Largest in Stream", "IPO",
+    ]),
+    ("SORTING + INTERVALS", HexColor('#b45309'), [
+        "Sort an Array (Merge Sort)", "Sort Colors",
+        "Merge Intervals", "Non-overlapping Intervals",
+        "Insert Interval", "Meeting Rooms",
+        "Car Pooling",
+    ]),
+]
+
+for group_title, color, problems in problem_groups:
+    group_style = ParagraphStyle(
+        f'g_{group_title}',
+        parent=styles['Normal'],
+        fontSize=9,
+        textColor=white,
+        fontName='Helvetica-Bold',
+        backColor=color,
+        borderPadding=(4, 8, 4, 8),
+        spaceAfter=2,
+        spaceBefore=6
+    )
+    story.append(Paragraph(group_title, group_style))
+    prob_text = " · ".join(problems)
+    story.append(Paragraph(prob_text, ParagraphStyle('probs',
+        parent=styles['Normal'],
+        fontSize=8,
+        fontName='Helvetica',
+        leading=12,
+        leftIndent=10,
+        spaceAfter=2,
+        backColor=HexColor('#f9f9f9'),
+        borderPadding=(3,6,3,6)
+    )))
+
+story.append(Spacer(1, 0.3*cm))
+
+# ─── LAYER 9: DAILY DRILL ───
+story.append(Paragraph("LAYER 9 — THE DAILY 5-MINUTE DRILL", h1_style))
+story.append(Paragraph("Every morning. No exceptions. 2 weeks → automatic forever.", body_style))
+
+drill_data = [
+    ["MORNING ROUTINE", ""],
+    ["Step 1", "Open blank paper — no notes, no phone"],
+    ["Step 2", "Write from memory: 8 tools + when to use each"],
+    ["Step 3", "Write from memory: 10 patterns + when to use each"],
+    ["Step 4", "Write from memory: 5 step process"],
+    ["Step 5", "Write from memory: 5 biggest mistakes to avoid"],
+    ["Step 6", "Check against this framework"],
+    ["Step 7", "Whatever you forgot → rewrite it 3 times"],
+    ["RESULT", "After 2 weeks → fires automatically in interviews"],
+]
+
+drill_table = Table(drill_data, colWidths=[3*cm, 12*cm])
+drill_table.setStyle(TableStyle([
+    ('BACKGROUND', (0,0), (-1,0), AMBER),
+    ('TEXTCOLOR', (0,0), (-1,0), white),
+    ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
+    ('FONTSIZE', (0,0), (-1,0), 10),
+    ('SPAN', (0,0), (-1,0)),
+    ('ALIGN', (0,0), (-1,0), 'CENTER'),
+    ('FONTNAME', (0,1), (-1,-1), 'Helvetica'),
+    ('FONTSIZE', (0,1), (-1,-1), 9),
+    ('ROWBACKGROUNDS', (0,1), (-1,-2), [LIGHT_AMBER, white]),
+    ('BACKGROUND', (0,-1), (-1,-1), GREEN),
+    ('TEXTCOLOR', (0,-1), (-1,-1), white),
+    ('FONTNAME', (0,-1), (-1,-1), 'Helvetica-Bold'),
+    ('GRID', (0,0), (-1,-1), 0.5, HexColor('#cccccc')),
+    ('TOPPADDING', (0,0), (-1,-1), 5),
+    ('BOTTOMPADDING', (0,0), (-1,-1), 5),
+    ('LEFTPADDING', (0,0), (-1,-1), 8),
+    ('FONTNAME', (0,1), (0,-2), 'Helvetica-Bold'),
+    ('TEXTCOLOR', (0,1), (0,-2), AMBER),
+]))
+story.append(drill_table)
+story.append(Spacer(1, 0.5*cm))
+
+# Footer
+footer_style = ParagraphStyle(
+    'Footer',
+    parent=styles['Normal'],
+    fontSize=8,
+    textColor=MUTED,
+    alignment=1,
+    fontName='Helvetica'
+)
+story.append(HRFlowable(width="100%", thickness=1, color=PURPLE, spaceAfter=8))
+story.append(Paragraph(
+    "DSA in Python · 10-Week 80/20 Plan · Weeks 1-6 Foundation Complete · "
+    "80+ Problems Solved · Built for fingertip knowledge",
+    footer_style
+))
+
+doc.build(story)
+print("PDF created successfully!")
