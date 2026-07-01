@@ -199,7 +199,31 @@ Events at positions → cumulative sum.
 
 ---
 
-## Day 6 — Review [upcoming]
+## Day 6 — Review Day
+**Date:** 12 April 2026
+**Time:** 4 Hours
+
+### Weak Spots Drilled
+- Interval golden rule → SORT BY START first
+- Meeting Rooms II → heap stores END TIMES
+- Two heap median → small=lower, large=upper
+- self.k not k in class methods
+
+### Key Concepts Revised
+- All 9 layers of Mental Framework
+- 80+ problems grouped by pattern
+- Complexity cheat sheet
+- Daily 5-minute drill established
+
+### Mental Framework
+Added DSA_Mental_Framework.pdf to repo root
+| 📋 [Mental Framework](./DSA_Mental_Framework.pdf) | Complete Weeks 1-6 Reference |
+Contains all 9 layers for fingertip knowledge
+
+### Reflection
+Week 6 = hardest week so far.
+Sorting + Heaps combined everything.
+Mental framework built — daily drill starts now.
 
 ---
 
