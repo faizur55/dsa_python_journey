@@ -19,7 +19,7 @@ Platform: LeetCode
 |-------|-------|-------|--------|
 | 🟣 Foundations | 1–2 | Big-O, Arrays, Patterns | ✅ Done |
 | 🔵 Core Structures | 3–4 | Stacks, Linked Lists | ✅ Done |
-| 🟢 Trees & Search | 5–6 | BST, Sorting, Heaps | ⏳ |
+| 🟢 Trees & Search | 5–6 | BST, Sorting, Heaps | ✅ Done |
 | 🟡 Graphs | 7 | BFS, DFS, Topo Sort | ⏳ |
 | 🟠 DP | 8–9 | Memoization, Tries | ⏳ |
 | 🔴 Mastery | 10 | 2D DP, Backtracking | ⏳ |
@@ -43,7 +43,7 @@ Platform: LeetCode
 
 ---
 Total Problems Solved :  84+ / 60+
-Weeks Completed       :  5   / 10
+Weeks Completed       :  6   / 10
 Current Streak        :  40  day(s) 🔥
 ---
 
