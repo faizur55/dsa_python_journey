@@ -48,10 +48,10 @@ Complete the foundation (Weeks 1-6).
 ## 📊 Stats
 
 ```
-Status          : 🔄 In Progress
-Problems Solved : 15
-Key Takeaway    : Intervals → sort first always.
-                  Difference array = passengers
-                  at each stop.
-                  Min heap size K = Kth largest.
+Status          : ✅ Complete
+Problems Solved : 12
+Key Takeaway    : Sort intervals by start always.
+                  Min heap size K = K largest.
+                  Two heaps = median stream.
+                  Heap size = rooms needed.
 ```
