@@ -48,10 +48,15 @@ Complete the foundation (Weeks 1-6).
 ## 📊 Stats
 
 ```
+## 📊 Stats
+
+```
 Status          : ✅ Complete
 Problems Solved : 12
 Key Takeaway    : Sort intervals by start always.
                   Min heap size K = K largest.
                   Two heaps = median stream.
                   Heap size = rooms needed.
+                  Foundation complete after this week.
+```
 ```
