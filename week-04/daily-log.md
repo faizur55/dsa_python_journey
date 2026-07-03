@@ -165,8 +165,45 @@ Then pick the right tool for each need.
 
 ---
 
-## Day 6 — Review [upcoming]
+## Day 6 — Review Day
+**Date:** 28 March 2026
+**Time:** 2 hours
 
+### Weak Spots Drilled
+- LRU Cache — dict + doubly linked list
+- Floyd's cycle detection phase 2
+- Recursion hidden space cost O(n)
+- Dummy node — always return dummy.next
+
+### Problems Revisited
+| Concept | Key Rule |
+|---------|----------|
+| Reverse List | SAVE → REVERSE → MOVE |
+| Slow/Fast | fast 2x → slow at middle |
+| Floyd Phase 2 | reset slow → move both 1 |
+| LRU Cache | dict + doubly linked list |
+| Recursion | iterative O(1) vs recursive O(n) |
+
+### Key Insight
+LRU Cache = two structures:
+  dict → O(1) lookup
+  doubly linked list → O(1) order
+
+HEAD = most recent
+TAIL = least recent
+Evict tail.prev when over capacity
+
+### Reflection
+Week 4 was most design-heavy week.
+LRU Cache combined everything learned.
+Recursion space cost = most forgotten thing.
 ---
 
-## Day 7 — Publish [upcoming]
+## Day 7 — Publish
+**Date:** 29 March 2026
+
+- [x] GitHub fully updated
+- [x] week-04/README.md → status ✅ Complete
+- [x] Twitter thread posted
+- [x] Blog post published
+- [x] Week 4 complete ✅
