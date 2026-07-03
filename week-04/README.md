@@ -46,10 +46,14 @@ recursion as a problem-solving technique.
 ## 📊 Stats
 
 ```
-Status          : 🔄 In Progress
+## 📊 Stats
+
+```
+Status          : ✅ Complete
 Problems Solved : 14
-Key Takeaway    : dict + doubly linked list
-                  = O(1) get and put.
-                  Design problems need
-                  two structures together.
+Key Takeaway    : No index access in linked lists.
+                  Everything is pointer manipulation.
+                  LRU Cache = dict + doubly linked list.
+                  Recursion = O(n) hidden space cost.
+```
 ```
